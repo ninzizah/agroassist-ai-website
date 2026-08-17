@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Scroll Animations (Intersection Observer) ---
     const animateElements = document.querySelectorAll(
-        '.problem-card, .step, .feature-card, .impact-card, .team-card, .section-header, .impact-quote, .download-content, .hero-badge'
+        '.challenge-card, .step, .feature-card, .impact-card, .team-card, .section-header, .impact-quote, .download-content'
     );
 
     const observer = new IntersectionObserver((entries) => {
