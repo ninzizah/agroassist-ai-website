@@ -763,126 +763,74 @@ img {
     line-height: 1.5;
 }
 
-/* --- Roadmap --- */
-.roadmap {
+/* --- Mission --- */
+.mission {
     padding: 80px 0;
-    background: var(--stone-50);
+    background: var(--white);
 }
 
-.roadmap-timeline {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 0;
-    max-width: 900px;
+.mission-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    align-items: center;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.roadmap-phase {
-    flex: 1;
-    padding: 28px 24px;
-    border-radius: 16px;
-    background: var(--white);
-    border: 2px solid var(--stone-200);
-    text-align: center;
-}
-
-.roadmap-phase.roadmap-done {
-    border-color: var(--green-500);
-}
-
-.roadmap-phase.roadmap-active {
-    border-color: #f59e0b;
-    box-shadow: 0 4px 20px rgba(245, 158, 11, 0.15);
-}
-
-.roadmap-phase.roadmap-upcoming {
-    border-color: var(--stone-300);
-    opacity: 0.7;
-}
-
-.roadmap-connector {
-    width: 60px;
-    height: 2px;
-    background: var(--stone-300);
-    margin-top: 60px;
-    flex-shrink: 0;
-}
-
-.roadmap-badge {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--stone-500);
-    margin-bottom: 8px;
-}
-
-.roadmap-status {
-    display: inline-block;
-    padding: 3px 12px;
-    border-radius: 100px;
-    font-size: 11px;
-    font-weight: 800;
-    text-transform: uppercase;
+.mission-text .section-tag {
     margin-bottom: 12px;
+    display: inline-block;
 }
 
-.roadmap-status.done {
-    background: var(--green-100);
-    color: var(--green-700);
-}
-
-.roadmap-status.active {
-    background: #fef3c7;
-    color: #d97706;
-}
-
-.roadmap-status.upcoming {
-    background: var(--stone-100);
-    color: var(--stone-500);
-}
-
-.roadmap-phase h3 {
-    font-size: 18px;
-    font-weight: 700;
+.mission-text h2 {
+    font-size: 36px;
+    font-weight: 900;
     color: var(--stone-900);
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.mission-text p {
+    font-size: 16px;
+    color: var(--stone-500);
+    line-height: 1.7;
     margin-bottom: 12px;
 }
 
-.roadmap-phase ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+.mission-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.roadmap-phase ul li {
-    padding: 4px 0;
-    font-size: 13px;
-    color: var(--stone-600);
+.mission-stat-card {
+    background: var(--stone-50);
+    border: 1px solid var(--stone-100);
+    border-radius: 16px;
+    padding: 20px 24px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
+    transition: transform 0.3s ease;
 }
 
-.roadmap-phase ul li i {
-    font-size: 11px;
-    width: 16px;
-    text-align: center;
+.mission-stat-card:hover {
+    transform: translateX(4px);
+    border-color: var(--green-200);
 }
 
-.roadmap-done ul li i {
-    color: var(--green-500);
+.mission-stat-number {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--green-700);
+    min-width: 100px;
 }
 
-.roadmap-active ul li i {
-    color: #f59e0b;
-}
-
-.roadmap-upcoming ul li i {
-    color: var(--stone-400);
+.mission-stat-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--stone-600);
 }
 
 /* --- App Banner --- */
@@ -1720,6 +1668,26 @@ img {
 
     .flip-card {
         height: 240px;
+    }
+
+    .mission-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .mission-visual {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .mission-stat-card {
+        flex-direction: column;
+        text-align: center;
+        min-width: 140px;
+    }
+
+    .mission-stat-number {
+        min-width: auto;
     }
 
     .impact-grid {
