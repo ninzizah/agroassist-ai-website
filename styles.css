@@ -791,6 +791,45 @@ img {
     line-height: 1.6;
 }
 
+/* --- Screenshots --- */
+.screenshots {
+    padding: 100px 0;
+    background: var(--stone-50);
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.screenshot-card {
+    background: var(--white);
+    border: 1px solid var(--stone-100);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.screenshot-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.screenshot-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.screenshot-label {
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--stone-700);
+    text-align: center;
+}
+
 /* --- Impact --- */
 .impact {
     padding: 100px 0;
@@ -1219,6 +1258,10 @@ img {
         grid-column: span 2;
     }
 
+    .screenshots-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .impact-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1287,6 +1330,10 @@ img {
 
     .feature-card-large {
         grid-column: span 1;
+    }
+
+    .screenshots-grid {
+        grid-template-columns: 1fr;
     }
 
     .impact-grid {
