@@ -885,17 +885,20 @@ img {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    justify-items: center;
 }
 
 .team-card {
     background: var(--stone-50);
     border: 1px solid var(--stone-100);
-    border-radius: 20px;
-    padding: 32px 20px;
+    border-radius: 24px;
+    padding: 40px 28px;
     text-align: center;
     transition: all 0.3s ease;
+    width: 100%;
+    max-width: 320px;
 }
 
 .team-card:hover {
@@ -910,26 +913,27 @@ img {
 }
 
 .team-avatar {
-    width: 72px;
-    height: 72px;
+    width: 180px;
+    height: 180px;
     background: var(--green-700);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 16px;
+    margin: 0 auto 20px;
+    overflow: hidden;
 }
 
 .team-card-founder .team-avatar {
     background: var(--green-600);
-    box-shadow: 0 4px 14px rgba(21, 128, 61, 0.3);
+    box-shadow: 0 8px 30px rgba(21, 128, 61, 0.3);
 }
 
 .team-avatar span {
-    font-size: 22px;
+    font-size: 56px;
     font-weight: 800;
     color: var(--white);
-    letter-spacing: -0.5px;
+    letter-spacing: -2px;
 }
 
 .team-avatar-img {
@@ -1220,7 +1224,7 @@ img {
     }
 
     .team-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .download-content {
