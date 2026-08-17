@@ -886,7 +886,7 @@ img {
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 24px;
 }
 
 .team-card {
@@ -911,7 +911,7 @@ img {
 
 .team-avatar {
     width: 100%;
-    aspect-ratio: 4/3;
+    height: 180px;
     background: var(--green-700);
     display: flex;
     align-items: center;
@@ -924,7 +924,7 @@ img {
 }
 
 .team-avatar span {
-    font-size: 80px;
+    font-size: 64px;
     font-weight: 800;
     color: var(--white);
     letter-spacing: -2px;
@@ -942,27 +942,27 @@ img {
 }
 
 .team-card h3 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     color: var(--stone-900);
     margin-bottom: 4px;
     line-height: 1.3;
-    padding: 20px 20px 0;
+    padding: 16px 16px 0;
 }
 
 .team-role {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--green-700);
     margin-bottom: 2px;
-    padding: 0 20px;
+    padding: 0 16px;
 }
 
 .team-role-detail {
-    font-size: 13px;
+    font-size: 12px;
     color: var(--stone-400);
-    margin-bottom: 16px;
-    padding: 0 20px;
+    margin-bottom: 12px;
+    padding: 0 16px;
 }
 
 .team-social {
