@@ -581,6 +581,274 @@ img {
     50% { transform: translateY(-10px); }
 }
 
+/* --- Before vs After --- */
+.before-after {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.comparison-table {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--stone-200);
+}
+
+.comparison-header {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    background: var(--stone-900);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    border-bottom: 1px solid var(--stone-100);
+    transition: background 0.2s;
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+.comparison-row:hover {
+    background: var(--stone-50);
+}
+
+.comparison-col {
+    padding: 16px 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.comparison-header .comparison-col {
+    padding: 16px 20px;
+}
+
+.comparison-task {
+    font-weight: 600;
+    color: var(--stone-800);
+}
+
+.comparison-task i {
+    color: var(--green-600);
+    width: 20px;
+    text-align: center;
+}
+
+.comparison-before {
+    color: var(--stone-500);
+}
+
+.comparison-after {
+    color: var(--green-700);
+}
+
+.old-badge {
+    background: #fef2f2;
+    color: #dc2626;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.new-badge {
+    background: var(--green-50);
+    color: var(--green-700);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* --- Impact Metrics --- */
+.impact {
+    padding: 80px 0;
+    background: var(--green-700);
+    color: var(--white);
+}
+
+.impact .section-tag {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--white);
+}
+
+.impact .section-header p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.impact-card {
+    text-align: center;
+    padding: 24px 16px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.impact-number {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.impact-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--white);
+}
+
+.impact-card p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+}
+
+/* --- Roadmap --- */
+.roadmap {
+    padding: 80px 0;
+    background: var(--stone-50);
+}
+
+.roadmap-timeline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.roadmap-phase {
+    flex: 1;
+    padding: 28px 24px;
+    border-radius: 16px;
+    background: var(--white);
+    border: 2px solid var(--stone-200);
+    text-align: center;
+}
+
+.roadmap-phase.roadmap-done {
+    border-color: var(--green-500);
+}
+
+.roadmap-phase.roadmap-active {
+    border-color: #f59e0b;
+    box-shadow: 0 4px 20px rgba(245, 158, 11, 0.15);
+}
+
+.roadmap-phase.roadmap-upcoming {
+    border-color: var(--stone-300);
+    opacity: 0.7;
+}
+
+.roadmap-connector {
+    width: 60px;
+    height: 2px;
+    background: var(--stone-300);
+    margin-top: 60px;
+    flex-shrink: 0;
+}
+
+.roadmap-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--stone-500);
+    margin-bottom: 8px;
+}
+
+.roadmap-status {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.roadmap-status.done {
+    background: var(--green-100);
+    color: var(--green-700);
+}
+
+.roadmap-status.active {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.roadmap-status.upcoming {
+    background: var(--stone-100);
+    color: var(--stone-500);
+}
+
+.roadmap-phase h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--stone-900);
+    margin-bottom: 12px;
+}
+
+.roadmap-phase ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.roadmap-phase ul li {
+    padding: 4px 0;
+    font-size: 13px;
+    color: var(--stone-600);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.roadmap-phase ul li i {
+    font-size: 11px;
+    width: 16px;
+    text-align: center;
+}
+
+.roadmap-done ul li i {
+    color: var(--green-500);
+}
+
+.roadmap-active ul li i {
+    color: #f59e0b;
+}
+
+.roadmap-upcoming ul li i {
+    color: var(--stone-400);
+}
+
 /* --- App Banner --- */
 .app-banner {
     padding: 0;
@@ -1409,6 +1677,43 @@ img {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .comparison-row {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-header {
+        display: none;
+    }
+
+    .comparison-col {
+        padding: 10px 16px;
+    }
+
+    .comparison-task {
+        background: var(--stone-100);
+        font-weight: 700;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .roadmap-timeline {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+    }
+
+    .roadmap-connector {
+        width: 2px;
+        height: 24px;
+        margin: 0 auto;
+    }
+
+    .roadmap-phase {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1451,6 +1756,15 @@ img {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-number {
+        font-size: 28px;
+    }
+}
 
     .footer-bottom {
         flex-direction: column;
