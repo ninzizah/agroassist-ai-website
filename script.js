@@ -99,4 +99,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     impactNumbers.forEach(el => numberObserver.observe(el));
 
+    // --- Typing Animation ---
+    const typingEl = document.getElementById('typingText');
+    if (typingEl) {
+        const words = ['Diagnose', 'Treat', 'Prevent'];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 100;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                typingEl.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 50;
+            } else {
+                typingEl.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 100;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                typingSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typingSpeed = 300;
+            }
+
+            setTimeout(type, typingSpeed);
+        }
+
+        type();
+    }
+
 });
