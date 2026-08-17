@@ -932,6 +932,18 @@ img {
     letter-spacing: -0.5px;
 }
 
+.team-avatar-img {
+    overflow: hidden;
+    padding: 0;
+}
+
+.team-avatar-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .team-card h3 {
     font-size: 15px;
     font-weight: 700;
