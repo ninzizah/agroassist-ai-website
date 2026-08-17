@@ -581,94 +581,126 @@ img {
     50% { transform: translateY(-10px); }
 }
 
-/* --- Before vs After --- */
+/* --- Before vs After Split Screen --- */
 .before-after {
     padding: 80px 0;
     background: var(--white);
 }
 
-.comparison-table {
-    max-width: 900px;
+.split-screen {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+    max-width: 960px;
     margin: 0 auto;
-    border-radius: 16px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-    border: 1px solid var(--stone-200);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
 }
 
-.comparison-header {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
-    background: var(--stone-900);
-    color: var(--white);
-    font-weight: 700;
-    font-size: 14px;
+.split-before {
+    background: #fef2f2;
+    padding: 32px;
 }
 
-.comparison-row {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
-    border-bottom: 1px solid var(--stone-100);
-    transition: background 0.2s;
+.split-after {
+    background: var(--green-50);
+    padding: 32px;
 }
 
-.comparison-row:last-child {
-    border-bottom: none;
-}
-
-.comparison-row:hover {
-    background: var(--stone-50);
-}
-
-.comparison-col {
-    padding: 16px 20px;
-    font-size: 14px;
+.split-label {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
 }
 
-.comparison-header .comparison-col {
-    padding: 16px 20px;
-}
-
-.comparison-task {
-    font-weight: 600;
-    color: var(--stone-800);
-}
-
-.comparison-task i {
-    color: var(--green-600);
-    width: 20px;
-    text-align: center;
-}
-
-.comparison-before {
-    color: var(--stone-500);
-}
-
-.comparison-after {
-    color: var(--green-700);
-}
-
-.old-badge {
-    background: #fef2f2;
+.before-label {
     color: #dc2626;
-    padding: 2px 8px;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 12px;
-    white-space: nowrap;
 }
 
-.new-badge {
-    background: var(--green-50);
+.after-label {
     color: var(--green-700);
-    padding: 2px 8px;
-    border-radius: 6px;
+}
+
+.split-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.split-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.split-item i {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.split-before .split-item i {
+    background: #fecaca;
+    color: #dc2626;
+}
+
+.split-after .split-item i {
+    background: var(--green-100);
+    color: var(--green-700);
+}
+
+.split-item strong {
+    display: block;
+    font-size: 15px;
     font-weight: 700;
-    font-size: 12px;
-    white-space: nowrap;
+    color: var(--stone-900);
+    margin-bottom: 2px;
+}
+
+.split-item span {
+    font-size: 13px;
+    color: var(--stone-500);
+    line-height: 1.4;
+}
+
+.split-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    background: var(--white);
+}
+
+.split-divider-line {
+    width: 2px;
+    flex: 1;
+    background: var(--stone-200);
+}
+
+.split-divider-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--green-700);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin: 8px 0;
 }
 
 /* --- Impact Metrics --- */
@@ -1678,21 +1710,24 @@ img {
         grid-template-columns: 1fr 1fr;
     }
 
-    .comparison-row {
+    .split-screen {
         grid-template-columns: 1fr;
     }
 
-    .comparison-header {
-        display: none;
+    .split-divider {
+        flex-direction: row;
+        width: 100%;
+        height: 48px;
     }
 
-    .comparison-col {
-        padding: 10px 16px;
+    .split-divider-line {
+        width: auto;
+        height: 2px;
+        flex: 1;
     }
 
-    .comparison-task {
-        background: var(--stone-100);
-        font-weight: 700;
+    .split-divider-icon {
+        margin: 0 8px;
     }
 
     .impact-grid {
