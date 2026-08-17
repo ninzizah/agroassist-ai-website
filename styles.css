@@ -101,6 +101,13 @@ img {
     gap: 10px;
 }
 
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
 .logo-icon {
     width: 40px;
     height: 40px;
@@ -1045,16 +1052,13 @@ img {
     gap: 16px;
 }
 
-.qr-box {
+.qr-image {
     width: 200px;
     height: 200px;
+    object-fit: contain;
     background: var(--white);
     border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 80px;
-    color: var(--stone-300);
+    padding: 16px;
 }
 
 .qr-code-placeholder span {
