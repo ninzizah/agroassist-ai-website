@@ -388,23 +388,192 @@ img {
     font-weight: 500;
 }
 
-/* Hero Image */
+/* Phone Mockup */
 .hero-visual {
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.hero-image-wrapper {
-    max-width: 300px;
+.phone-mockup {
+    width: 280px;
+    background: var(--stone-900);
+    border-radius: 36px;
+    padding: 12px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
-.hero-app-image {
-    width: 100%;
-    height: auto;
+.phone-screen {
+    background: var(--white);
+    border-radius: 26px;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.app-header-mini {
+    background: var(--green-700);
+    color: var(--white);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.app-content-mini {
+    padding: 16px;
+}
+
+.scan-preview {
+    background: var(--stone-100);
+    border: 2px dashed var(--stone-300);
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--stone-400);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.scan-preview i {
+    font-size: 28px;
+    color: var(--green-600);
+}
+
+.diagnosis-card-mini {
+    background: var(--green-50);
+    border: 1px solid var(--green-100);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.diagnosis-badge {
+    display: inline-block;
+    background: var(--green-700);
+    color: var(--white);
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.diagnosis-severity {
+    margin-bottom: 12px;
+}
+
+.severity-bar {
+    height: 6px;
+    background: var(--stone-200);
+    border-radius: 100px;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.severity-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green-500), #f59e0b);
+    border-radius: 100px;
+}
+
+.diagnosis-severity span {
+    font-size: 11px;
+    color: var(--stone-500);
+    font-weight: 600;
+}
+
+.diagnosis-recommendations {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.rec-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--stone-600);
+}
+
+.rec-item i {
+    color: var(--green-600);
+    font-size: 10px;
+}
+
+/* Floating Cards */
+.floating-card {
+    position: absolute;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--stone-100);
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-card i {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.fc-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--stone-800);
     display: block;
-    border-radius: 20px;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+.fc-sub {
+    font-size: 11px;
+    color: var(--stone-400);
+    display: block;
+}
+
+.floating-card-1 {
+    top: 60px;
+    right: -20px;
+    animation-delay: 0s;
+}
+
+.floating-card-1 i {
+    background: #ede9fe;
+    color: #7c3aed;
+}
+
+.floating-card-2 {
+    bottom: 120px;
+    left: -30px;
+    animation-delay: 1s;
+}
+
+.floating-card-2 i {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.floating-card-3 {
+    bottom: 40px;
+    right: 0;
+    animation-delay: 2s;
+}
+
+.floating-card-3 i {
+    background: var(--green-100);
+    color: var(--green-700);
 }
 
 @keyframes float {
