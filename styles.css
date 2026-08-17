@@ -388,6 +388,22 @@ img {
     font-weight: 500;
 }
 
+/* Hero Typing Animation */
+.typing-text {
+    color: var(--green-700);
+}
+
+.typing-cursor {
+    color: var(--green-700);
+    font-weight: 300;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
 /* Phone Mockup */
 .hero-visual {
     position: relative;
