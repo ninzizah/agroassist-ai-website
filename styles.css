@@ -581,126 +581,130 @@ img {
     50% { transform: translateY(-10px); }
 }
 
-/* --- Before vs After Split Screen --- */
+/* --- Before vs After Flip Cards --- */
 .before-after {
     padding: 80px 0;
-    background: var(--white);
+    background: var(--stone-50);
 }
 
-.split-screen {
+.flip-grid {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     max-width: 960px;
     margin: 0 auto;
+}
+
+.flip-card {
+    perspective: 1000px;
+    height: 260px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
     border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
-}
-
-.split-before {
-    background: #fef2f2;
-    padding: 32px;
-}
-
-.split-after {
-    background: var(--green-50);
-    padding: 32px;
-}
-
-.split-label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    font-weight: 800;
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
-}
-
-.before-label {
-    color: #dc2626;
-}
-
-.after-label {
-    color: var(--green-700);
-}
-
-.split-items {
+    padding: 32px 24px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.split-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
+.flip-front {
+    background: var(--white);
+    border: 2px solid #fecaca;
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.06);
 }
 
-.split-item i {
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
+.flip-back {
+    background: linear-gradient(135deg, var(--green-600), var(--green-700));
+    color: var(--white);
+    transform: rotateY(180deg);
+    box-shadow: 0 8px 30px rgba(22, 163, 74, 0.2);
+}
+
+.flip-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
-    flex-shrink: 0;
-    margin-top: 2px;
+    font-size: 22px;
+    margin-bottom: 16px;
 }
 
-.split-before .split-item i {
-    background: #fecaca;
+.before-icon {
+    background: #fef2f2;
     color: #dc2626;
 }
 
-.split-after .split-item i {
-    background: var(--green-100);
-    color: var(--green-700);
+.after-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
 }
 
-.split-item strong {
-    display: block;
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--stone-900);
-    margin-bottom: 2px;
+.flip-front h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #dc2626;
+    margin-bottom: 8px;
 }
 
-.split-item span {
+.flip-back h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.flip-front p {
     font-size: 13px;
     color: var(--stone-500);
-    line-height: 1.4;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
-.split-divider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    background: var(--white);
+.flip-back p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
-.split-divider-line {
-    width: 2px;
-    flex: 1;
-    background: var(--stone-200);
+.flip-hint {
+    font-size: 11px;
+    color: var(--stone-400);
+    font-weight: 600;
+    margin-top: auto;
 }
 
-.split-divider-icon {
-    width: 36px;
-    height: 36px;
-    background: var(--green-700);
+.flip-badge {
+    background: rgba(255, 255, 255, 0.2);
     color: var(--white);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    margin: 8px 0;
+    padding: 4px 16px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: auto;
 }
 
 /* --- Impact Metrics --- */
@@ -1710,24 +1714,12 @@ img {
         grid-template-columns: 1fr 1fr;
     }
 
-    .split-screen {
-        grid-template-columns: 1fr;
+    .flip-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .split-divider {
-        flex-direction: row;
-        width: 100%;
-        height: 48px;
-    }
-
-    .split-divider-line {
-        width: auto;
-        height: 2px;
-        flex: 1;
-    }
-
-    .split-divider-icon {
-        margin: 0 8px;
+    .flip-card {
+        height: 240px;
     }
 
     .impact-grid {
@@ -1778,6 +1770,10 @@ img {
 
     .feature-card-large {
         grid-column: span 1;
+    }
+
+    .flip-grid {
+        grid-template-columns: 1fr;
     }
 
     .impact-grid {
