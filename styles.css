@@ -717,15 +717,52 @@ img {
 
 .step-phone-img {
     position: relative;
-    max-width: 250px;
+    width: 240px;
+    background: #f5f5f7;
+    border-radius: 52px;
+    padding: 14px;
+    box-shadow: 
+        0 40px 80px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(0, 0, 0, 0.05),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.step-phone-img::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 32px;
+    background: #1d1d1f;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.step-phone-img::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: #3a3a3c;
+    border-radius: 50%;
+    z-index: 11;
+    box-shadow: 
+        inset 0 0 3px rgba(0, 0, 0, 0.4),
+        0 0 2px rgba(255, 255, 255, 0.3);
 }
 
 .step-phone-img img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 24px;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
 }
 
 .step-phone-img:hover {
@@ -753,11 +790,26 @@ img {
     }
 
     .step-phone-img {
-        max-width: 200px;
+        width: 200px;
+        border-radius: 44px;
+        padding: 12px;
+    }
+
+    .step-phone-img::before {
+        width: 100px;
+        height: 28px;
+        top: 12px;
+        border-radius: 16px;
+    }
+
+    .step-phone-img::after {
+        top: 20px;
+        width: 10px;
+        height: 10px;
     }
 
     .step-phone-img img {
-        border-radius: 20px;
+        border-radius: 34px;
     }
 }
 
