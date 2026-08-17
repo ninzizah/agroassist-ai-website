@@ -1465,12 +1465,12 @@ img {
 }
 
 .qr-image {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
     object-fit: contain;
     background: var(--white);
     border-radius: 20px;
-    padding: 16px;
+    padding: 20px;
 }
 
 .qr-code-placeholder span {
