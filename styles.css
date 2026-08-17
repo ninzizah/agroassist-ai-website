@@ -888,53 +888,58 @@ img {
     font-weight: 500;
 }
 
-/* --- Problem Section --- */
-.problem {
+/* --- Challenges Section --- */
+.challenges {
     padding: 100px 0;
     background: var(--white);
 }
 
-.problem-grid {
+.challenges-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
-.problem-card {
+.challenge-card {
     background: var(--stone-50);
     border: 1px solid var(--stone-100);
     border-radius: 20px;
     padding: 32px;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
-.problem-card:hover {
+.challenge-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
-    border-color: var(--green-200);
+    border-color: #fecaca;
 }
 
-.problem-icon {
-    width: 56px;
-    height: 56px;
-    background: #fef2f2;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    color: #ef4444;
-    margin-bottom: 20px;
+.challenge-stat {
+    font-size: 42px;
+    font-weight: 900;
+    color: #dc2626;
+    line-height: 1;
+    margin-bottom: 4px;
 }
 
-.problem-card h3 {
+.challenge-unit {
+    font-size: 13px;
+    font-weight: 600;
+    color: #f87171;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.challenge-card h3 {
     font-size: 18px;
     font-weight: 700;
     color: var(--stone-900);
     margin-bottom: 8px;
 }
 
-.problem-card p {
+.challenge-card p {
     font-size: 14px;
     color: var(--stone-500);
     line-height: 1.6;
@@ -1621,7 +1626,7 @@ img {
         display: none;
     }
 
-    .problem-grid {
+    .challenges-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1728,7 +1733,7 @@ img {
         font-size: 30px;
     }
 
-    .problem-grid {
+    .challenges-grid {
         grid-template-columns: 1fr;
     }
 
