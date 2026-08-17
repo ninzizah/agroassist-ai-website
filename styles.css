@@ -603,9 +603,7 @@ img {
 
 .partners-track {
     display: flex;
-    gap: 120px;
-    animation: marquee 12s linear infinite;
-    width: max-content;
+    justify-content: center;
 }
 
 .partner-logo {
