@@ -618,7 +618,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: slideRight 20s linear infinite;
+    animation: slideRight 30s linear infinite;
 }
 
 .partner-logo .partner-img {
