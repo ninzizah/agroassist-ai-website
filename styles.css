@@ -714,15 +714,37 @@ img {
     justify-content: center;
 }
 
-.step-phone img {
+.step-phone-img {
+    position: relative;
+    width: 260px;
+    background: var(--stone-900);
+    border-radius: 40px;
+    padding: 12px;
+    box-shadow: 
+        0 25px 60px rgba(0, 0, 0, 0.25),
+        inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.step-phone-img::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 28px;
+    background: var(--stone-900);
+    border-radius: 0 0 16px 16px;
+    z-index: 10;
+}
+
+.step-phone-img img {
     width: 100%;
-    max-width: 280px;
     height: auto;
     border-radius: 30px;
-    box-shadow: 
-        0 0 0 8px var(--stone-900),
-        0 20px 60px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    display: block;
+    position: relative;
+    z-index: 1;
 }
 
 .step-phone img:hover {
@@ -749,12 +771,20 @@ img {
         margin: 0 auto 20px;
     }
 
-    .step-phone img {
-        max-width: 220px;
+    .step-phone-img {
+        width: 220px;
+        border-radius: 32px;
+        padding: 10px;
+    }
+
+    .step-phone-img::before {
+        width: 80px;
+        height: 24px;
+        top: 10px;
+    }
+
+    .step-phone-img img {
         border-radius: 24px;
-        box-shadow: 
-            0 0 0 6px var(--stone-900),
-            0 15px 40px rgba(0, 0, 0, 0.2);
     }
 }
 
