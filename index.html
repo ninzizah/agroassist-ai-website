@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroAssist AI - Smart Crop Disease Diagnosis for Rwanda</title>
+    <meta name="description" content="AI-powered crop disease diagnosis platform for Rwandan smallholder farmers. Snap a photo, get instant diagnosis and treatment recommendations.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <span class="logo-text">AgroAssist<span class="logo-ai">AI</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#impact">Impact</a>
+                <a href="#team">Team</a>
+                <a href="#download" class="btn-nav">Download App</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-trophy"></i>
+                    Hanga Pitchfest 2026 Top 45 Finalist
+                </div>
+                <h1>AI-Powered Crop Disease Diagnosis for Rwanda</h1>
+                <p class="hero-subtitle">Snap a photo of your sick crop. Get instant AI diagnosis, treatment recommendations, and expert support — all in English and Kinyarwanda.</p>
+                <div class="hero-cta">
+                    <a href="#download" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-download"></i>
+                        Download Free App
+                    </a>
+                    <a href="#how-it-works" class="btn btn-outline btn-lg">
+                        See How It Works
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">30</span>
+                        <span class="hero-stat-label">Districts Covered</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">50+</span>
+                        <span class="hero-stat-label">Diseases Detected</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">2</span>
+                        <span class="hero-stat-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-header-mini">
+                            <i class="fa-solid fa-leaf"></i>
+                            <span>AgroAssist AI</span>
+                        </div>
+                        <div class="app-content-mini">
+                            <div class="scan-preview">
+                                <i class="fa-solid fa-camera"></i>
+                                <span>Scan your crop</span>
+                            </div>
+                            <div class="diagnosis-card-mini">
+                                <div class="diagnosis-badge">Late Blight</div>
+                                <div class="diagnosis-severity">
+                                    <div class="severity-bar">
+                                        <div class="severity-fill" style="width: 75%"></div>
+                                    </div>
+                                    <span>75% Severity</span>
+                                </div>
+                                <div class="diagnosis-recommendations">
+                                    <div class="rec-item">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>Ridomil Gold MZ</span>
+                                    </div>
+                                    <div class="rec-item">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>Remove infected leaves</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card floating-card-1">
+                    <i class="fa-solid fa-brain"></i>
+                    <div>
+                        <span class="fc-title">AI Analysis</span>
+                        <span class="fc-sub">Powered by Gemini</span>
+                    </div>
+                </div>
+                <div class="floating-card floating-card-2">
+                    <i class="fa-solid fa-wifi-slash"></i>
+                    <div>
+                        <span class="fc-title">Works Offline</span>
+                        <span class="fc-sub">Sync when connected</span>
+                    </div>
+                </div>
+                <div class="floating-card floating-card-3">
+                    <i class="fa-solid fa-language"></i>
+                    <div>
+                        <span class="fc-title">Kinyarwanda</span>
+                        <span class="fc-sub">Your language</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Problem</span>
+                <h2>Rwandan Farmers Lose Crops Every Season</h2>
+                <p>Smallholder farmers produce 80% of Rwanda's food, but face critical challenges that threaten their livelihoods.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3>Late Detection</h3>
+                    <p>Farmers often discover crop diseases too late, after significant damage has already occurred. Without early warning systems, entire harvests can be lost.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fa-solid fa-user-slash"></i>
+                    </div>
+                    <h3>No Expert Access</h3>
+                    <p>Rwanda has only ~200 agronomists for 2+ million farmers. Most smallholders cannot reach a qualified expert when their crops get sick.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Wrong Treatments</h3>
+                    <p>Farmers rely on neighbor advice or shop recommendations, often buying wrong or banned pesticides that waste money and harm the environment.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3>Language Barriers</h3>
+                    <p>Most agricultural apps are in English only. Rwanda's farmers need solutions in Kinyarwanda to be truly accessible and effective.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2>Three Simple Steps to Crop Health</h2>
+                <p>From diagnosis to treatment in seconds — no agronomist needed for initial assessment.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <h3>Snap a Photo</h3>
+                        <p>Open the app and take a photo of your sick crop. Our AI works with any phone camera, even in low light conditions.</p>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>AI Diagnosis</h3>
+                        <p>Our AI instantly analyzes the image, identifying the disease, severity, and confidence level — all in seconds.</p>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fa-solid fa-pills"></i>
+                        </div>
+                        <h3>Get Treatment</h3>
+                        <p>Receive Rwanda-approved treatment recommendations with dosage, application methods, and where to buy locally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>Everything Farmers Need in One App</h2>
+                <p>From AI-powered diagnosis to expert consultations, AgroAssist AI is a complete agricultural intelligence platform.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-card-large">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3>AI Crop Disease Diagnosis</h3>
+                    <p>Take a photo of any diseased crop and get instant diagnosis with disease name, severity percentage, and confidence score. Our AI identifies 50+ diseases across tomato, potato, maize, rice, coffee, and more.</p>
+                    <div class="feature-tag">Core Feature</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-pills"></i>
+                    </div>
+                    <h3>Rwanda-Approved Medicine</h3>
+                    <p>Only recommends RICA/RAB-registered agrochemicals with exact dosage, active ingredients, and safety class.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-wifi-slash"></i>
+                    </div>
+                    <h3>Works Offline</h3>
+                    <p>Scans queue locally and sync when internet returns. Built for Rwanda's rural connectivity challenges.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <h3>English & Kinyarwanda</h3>
+                    <p>Full bilingual support with one-tap language toggle. Every screen, every message in your language.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3>Expert Consultations</h3>
+                    <p>Connect directly with certified agronomists in your district for personalized advice on complex cases.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                    </div>
+                    <h3>Weather Intelligence</h3>
+                    <p>GPS-based weather data with spray advisory (safe/unsafe to spray) and 3-day forecast for your location.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Market Prices</h3>
+                    <p>AI-powered real-time crop market prices for Rwanda. Know what your harvest is worth before you sell.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <h3>PDF Reports</h3>
+                    <p>Export branded diagnostic certificates with full disease analysis, treatment plan, and expert recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3>Voice AI Consultant</h3>
+                    <p>Live voice conversation with an AI agronomist. Designed for accessibility — works even for visually impaired farmers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact" id="impact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Impact</span>
+                <h2>Transforming Agriculture Across Rwanda</h2>
+                <p>From Kigali to rural Musanze, AgroAssist AI is empowering farmers with the intelligence they need to thrive.</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-number">30</div>
+                    <div class="impact-label">Districts Covered</div>
+                    <div class="impact-desc">All 30 districts across 5 provinces of Rwanda</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">50+</div>
+                    <div class="impact-label">Diseases Detected</div>
+                    <div class="impact-desc">Comprehensive database of crop diseases</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">37+</div>
+                    <div class="impact-label">Approved Medicines</div>
+                    <div class="impact-desc">RICA/RAB registered agrochemicals</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">2</div>
+                    <div class="impact-label">Languages</div>
+                    <div class="impact-desc">English and Kinyarwanda support</div>
+                </div>
+            </div>
+            <div class="impact-quote">
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <blockquote>
+                    "AgroAssist AI gives me the confidence to treat my crops properly. Before, I had to walk 2 hours to find an agronomist. Now I just take a photo and get answers in seconds."
+                </blockquote>
+                <div class="quote-author">
+                    <span class="author-name">— Rwandan Farmer</span>
+                    <span class="author-location">Musanze District</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Team</span>
+                <h2>Meet the People Behind AgroAssist AI</h2>
+                <p>A passionate team of engineers, agronomists, and business leaders building the future of farming in Rwanda.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card team-card-founder">
+                    <div class="team-avatar">
+                        <span>NS</span>
+                    </div>
+                    <h3>Ninziza Shema Honore</h3>
+                    <div class="team-role">Founder & CEO</div>
+                    <div class="team-role-detail">Software Engineer</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <span>NI</span>
+                    </div>
+                    <h3>Ngabonziza Ishimwe Flora</h3>
+                    <div class="team-role">Business Development</div>
+                    <div class="team-role-detail">Partnerships Lead</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <span>TS</span>
+                    </div>
+                    <h3>Tumbwe Serge</h3>
+                    <div class="team-role">Mobile Developer</div>
+                    <div class="team-role-detail">App Architecture</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <span>KC</span>
+                    </div>
+                    <h3>Karamuka Cedrick</h3>
+                    <div class="team-role">AI/ML Engineer</div>
+                    <div class="team-role-detail">Intelligence Systems</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <span>UV</span>
+                    </div>
+                    <h3>Uwayezu Valerien</h3>
+                    <div class="team-role">Agronomist</div>
+                    <div class="team-role-detail">Agricultural Expert</div>
+                    <div class="team-social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <span class="section-tag section-tag-light">Get The App</span>
+                    <h2>Start Diagnosing Your Crops Today</h2>
+                    <p>Download AgroAssist AI for free. Available as Android APK and Progressive Web App. Works on any smartphone.</p>
+                    <div class="download-buttons">
+                        <a href="#" class="btn btn-primary btn-lg">
+                            <i class="fa-solid fa-download"></i>
+                            Download APK
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg">
+                            <i class="fa-solid fa-globe"></i>
+                            Try Web App
+                        </a>
+                    </div>
+                    <div class="download-meta">
+                        <span><i class="fa-solid fa-shield-halved"></i> Free to use</span>
+                        <span><i class="fa-solid fa-database"></i> 10 free scans</span>
+                        <span><i class="fa-solid fa-mobile-screen-button"></i> Any Android phone</span>
+                    </div>
+                </div>
+                <div class="download-visual">
+                    <div class="qr-code-placeholder">
+                        <div class="qr-box">
+                            <i class="fa-solid fa-qrcode"></i>
+                        </div>
+                        <span>Scan to Download</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <span class="logo-text">AgroAssist<span class="logo-ai">AI</span></span>
+                    </a>
+                    <p>AI-powered crop disease diagnosis platform for Rwandan smallholder farmers. Building the future of agriculture, one scan at a time.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#download">Download</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">API</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#team">Team</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AgroAssist AI. All rights reserved. Built in Rwanda for African farmers.</p>
+                <div class="footer-badges">
+                    <span><i class="fa-solid fa-trophy"></i> Hanga Pitchfest 2026</span>
+                    <span><i class="fa-solid fa-rocket"></i> Startup Rwanda</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
