@@ -601,24 +601,17 @@ img {
     overflow: hidden;
 }
 
-.partners-grid {
+.partners-track {
     display: flex;
-    justify-content: center;
-    gap: 32px;
-}
-
-.partner-card {
-    text-align: center;
-    flex-shrink: 0;
+    gap: 120px;
+    animation: marquee 12s linear infinite;
+    width: max-content;
 }
 
 .partner-logo {
     width: 280px;
     height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: slideRight 30s linear infinite;
+    flex-shrink: 0;
 }
 
 .partner-logo .partner-img {
@@ -627,9 +620,9 @@ img {
     object-fit: contain;
 }
 
-@keyframes slideRight {
-    0% { transform: translateX(-100vw); }
-    100% { transform: translateX(100vw); }
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-280px - 120px)); }
 }
 
 .partner-card h3 {
