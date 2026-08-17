@@ -613,12 +613,12 @@ img {
 }
 
 .partner-logo {
-    width: 160px;
-    height: 160px;
+    width: 220px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: slideRight 8s linear infinite;
+    animation: slideRight 15s linear infinite;
 }
 
 .partner-logo .partner-img {
