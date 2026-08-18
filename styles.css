@@ -1173,29 +1173,30 @@ img {
 
 .feature-card-large {
     grid-column: span 3;
-    background: var(--white);
-    border: 2px solid var(--green-200);
+    background: linear-gradient(135deg, var(--green-700) 0%, var(--green-800) 100%);
+    color: #ffffff;
+    border: none;
 }
 
 .feature-card-large h3 {
-    color: var(--stone-900);
+    color: #ffffff;
 }
 
 .feature-card-large p {
-    color: var(--stone-500);
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .feature-card-large .feature-icon {
-    background: var(--green-100);
-    color: var(--green-700);
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
 }
 
 .feature-tag {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: var(--green-100);
-    color: var(--green-700);
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
     padding: 4px 12px;
     border-radius: 100px;
     font-size: 11px;
