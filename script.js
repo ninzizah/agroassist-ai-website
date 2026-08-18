@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
-                // Stagger the animation
                 setTimeout(() => {
                     entry.target.classList.add('visible');
                 }, index * 80);
@@ -69,6 +68,132 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- Language Switcher & i18n ---
+    let translations = {};
+    let currentLang = localStorage.getItem('agroassist-lang') || 'en';
+
+    function applyTranslations(lang) {
+        if (!translations[lang]) return;
+        const t = translations[lang];
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (t[key] !== undefined) {
+                if (el.tagName === 'META') {
+                    el.setAttribute('content', t[key]);
+                } else {
+                    el.textContent = t[key];
+                }
+            }
+        });
+
+        // Update page title
+        if (t.page_title) {
+            document.title = t.page_title;
+        }
+
+        // Update html lang attribute
+        document.documentElement.lang = lang;
+
+        // Update active language button
+        document.querySelectorAll('.lang-option').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+
+        // Update displayed language code
+        const langCurrent = document.querySelector('.lang-current');
+        if (langCurrent) {
+            langCurrent.textContent = lang.toUpperCase();
+        }
+
+        // Restart typing animation with new language words
+        if (t.hero_typing && Array.isArray(t.hero_typing)) {
+            startTypingAnimation(t.hero_typing);
+        }
+    }
+
+    // Fetch translations and init
+    fetch('translations.json')
+        .then(res => res.json())
+        .then(data => {
+            translations = data;
+            applyTranslations(currentLang);
+        })
+        .catch(err => {
+            console.warn('Could not load translations:', err);
+        });
+
+    // Language switcher click handlers
+    const langSwitcher = document.getElementById('langSwitcher');
+    const langDropdown = document.getElementById('langDropdown');
+
+    langSwitcher.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langDropdown.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.lang-option').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const lang = btn.dataset.lang;
+            currentLang = lang;
+            localStorage.setItem('agroassist-lang', lang);
+            applyTranslations(lang);
+            langDropdown.classList.remove('open');
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', () => {
+        langDropdown.classList.remove('open');
+    });
+
+    // --- Typing Animation ---
+    let typingTimeout = null;
+
+    function startTypingAnimation(words) {
+        const typingEl = document.getElementById('typingText');
+        if (!typingEl || !words || words.length === 0) return;
+
+        // Clear any existing timeout
+        if (typingTimeout) clearTimeout(typingTimeout);
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 100;
+
+        function type() {
+            const currentWord = words[wordIndex];
+
+            if (isDeleting) {
+                typingEl.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 50;
+            } else {
+                typingEl.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 100;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                typingSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typingSpeed = 300;
+            }
+
+            typingTimeout = setTimeout(type, typingSpeed);
+        }
+
+        type();
+    }
+
+    // Initialize typing with default English words
+    startTypingAnimation(['Diagnose', 'Treat', 'Prevent']);
 
     // --- Animate impact numbers on scroll ---
     const impactNumbers = document.querySelectorAll('.impact-number');
@@ -98,42 +223,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.5 });
 
     impactNumbers.forEach(el => numberObserver.observe(el));
-
-    // --- Typing Animation ---
-    const typingEl = document.getElementById('typingText');
-    if (typingEl) {
-        const words = ['Diagnose', 'Treat', 'Prevent'];
-        let wordIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        let typingSpeed = 100;
-
-        function type() {
-            const currentWord = words[wordIndex];
-            
-            if (isDeleting) {
-                typingEl.textContent = currentWord.substring(0, charIndex - 1);
-                charIndex--;
-                typingSpeed = 50;
-            } else {
-                typingEl.textContent = currentWord.substring(0, charIndex + 1);
-                charIndex++;
-                typingSpeed = 100;
-            }
-
-            if (!isDeleting && charIndex === currentWord.length) {
-                typingSpeed = 2000;
-                isDeleting = true;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                wordIndex = (wordIndex + 1) % words.length;
-                typingSpeed = 300;
-            }
-
-            setTimeout(type, typingSpeed);
-        }
-
-        type();
-    }
 
 });

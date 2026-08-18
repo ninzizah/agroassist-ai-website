@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroAssist AI - Smart Crop Disease Diagnosis for Rwanda</title>
-    <meta name="description" content="AI-powered crop disease diagnosis platform for Rwandan smallholder farmers. Snap a photo, get instant diagnosis and treatment recommendations.">
+    <title data-i18n="page_title">AgroAssist AI - Smart Crop Disease Diagnosis for Rwanda</title>
+    <meta name="description" data-i18n="page_desc" content="AI-powered crop disease diagnosis platform for Rwandan smallholder farmers. Snap a photo, get instant diagnosis and treatment recommendations.">
     <link rel="icon" type="image/png" href="icon1.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +21,20 @@
                 <span class="logo-text">AgroAssist<span class="logo-ai">AI</span></span>
             </a>
             <div class="nav-links" id="navLinks">
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#impact">Impact</a>
-                <a href="#team">Team</a>
-                <a href="#download" class="btn-nav">Download App</a>
+                <a href="#features" data-i18n="nav_features">Features</a>
+                <a href="#how-it-works" data-i18n="nav_how_it_works">How It Works</a>
+                <a href="#impact" data-i18n="nav_impact">Impact</a>
+                <a href="#team" data-i18n="nav_team">Team</a>
+                <div class="lang-switcher" id="langSwitcher">
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="lang-current">EN</span>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button data-lang="en" class="lang-option active">EN</button>
+                        <button data-lang="rw" class="lang-option">RW</button>
+                        <button data-lang="sw" class="lang-option">SW</button>
+                    </div>
+                </div>
+                <a href="#download" class="btn-nav" data-i18n="nav_download">Download App</a>
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fa-solid fa-bars"></i>
@@ -42,30 +51,30 @@
         </div>
         <div class="container hero-container">
             <div class="hero-content">
-                <h1>AI-Powered Crop Disease<br><span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span> for Rwanda</h1>
-                <p class="hero-subtitle">Snap a photo of your crop. Get instant AI diagnosis, treatment recommendations, and expert support — built for Rwandan farmers, in English and Kinyarwanda.</p>
+                <h1><span data-i18n="hero_title_1">AI-Powered Crop Disease</span><br><span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span> <span data-i18n="hero_title_2">for Rwanda</span></h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Snap a photo of your crop. Get instant AI diagnosis, treatment recommendations, and expert support — built for Rwandan farmers, in English and Kinyarwanda.</p>
                 <div class="hero-cta">
                     <a href="#download" class="btn btn-primary btn-lg">
                         <i class="fa-solid fa-download"></i>
-                        Download Free App
+                        <span data-i18n="hero_cta_download">Download Free App</span>
                     </a>
                     <a href="#how-it-works" class="btn btn-outline btn-lg">
-                        See How It Works
+                        <span data-i18n="hero_cta_how_it_works">See How It Works</span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <span class="hero-stat-number">30</span>
-                        <span class="hero-stat-label">Targeting Districts</span>
+                        <span class="hero-stat-number" data-i18n="hero_stat_1_number">30</span>
+                        <span class="hero-stat-label" data-i18n="hero_stat_1_label">Targeting Districts</span>
                     </div>
                     <div class="hero-stat">
-                        <span class="hero-stat-number">50+</span>
-                        <span class="hero-stat-label">Diseases Detected</span>
+                        <span class="hero-stat-number" data-i18n="hero_stat_2_number">50+</span>
+                        <span class="hero-stat-label" data-i18n="hero_stat_2_label">Diseases Detected</span>
                     </div>
                     <div class="hero-stat">
-                        <span class="hero-stat-number">2</span>
-                        <span class="hero-stat-label">Languages</span>
+                        <span class="hero-stat-number" data-i18n="hero_stat_3_number">3</span>
+                        <span class="hero-stat-label" data-i18n="hero_stat_3_label">Languages</span>
                     </div>
                 </div>
             </div>
@@ -132,34 +141,34 @@
     <section class="challenges" id="challenges">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Challenges</span>
-                <h2>Rwandan Farmers Lose Crops Every Season</h2>
-                <p>Smallholder farmers produce 80% of Rwanda's food, but face critical challenges that threaten their livelihoods.</p>
+                <span class="section-tag" data-i18n="challenges_tag">Challenges</span>
+                <h2 data-i18n="challenges_title">Rwandan Farmers Lose Crops Every Season</h2>
+                <p data-i18n="challenges_desc">Smallholder farmers produce 80% of Rwanda's food, but face critical challenges that threaten their livelihoods.</p>
             </div>
             <div class="challenges-grid">
                 <div class="challenge-card">
-                    <div class="challenge-stat">7–14</div>
-                    <div class="challenge-unit">days</div>
-                    <h3>Late Detection</h3>
-                    <p>Farmers often discover crop diseases too late, after significant damage has already occurred. Without early warning systems, entire harvests can be lost.</p>
+                    <div class="challenge-stat" data-i18n="challenge_1_stat">7–14</div>
+                    <div class="challenge-unit" data-i18n="challenge_1_unit">days</div>
+                    <h3 data-i18n="challenge_1_title">Late Detection</h3>
+                    <p data-i18n="challenge_1_desc">Farmers often discover crop diseases too late, after significant damage has already occurred. Without early warning systems, entire harvests can be lost.</p>
                 </div>
                 <div class="challenge-card">
-                    <div class="challenge-stat">1:1,000+</div>
-                    <div class="challenge-unit">ratio</div>
-                    <h3>No Expert Access</h3>
-                    <p>Rwanda has only ~200 agronomists for 2+ million farmers. Most smallholders cannot reach a qualified expert when their crops get sick.</p>
+                    <div class="challenge-stat" data-i18n="challenge_2_stat">1:1,000+</div>
+                    <div class="challenge-unit" data-i18n="challenge_2_unit">ratio</div>
+                    <h3 data-i18n="challenge_2_title">No Expert Access</h3>
+                    <p data-i18n="challenge_2_desc">Rwanda has only ~200 agronomists for 2+ million farmers. Most smallholders cannot reach a qualified expert when their crops get sick.</p>
                 </div>
                 <div class="challenge-card">
-                    <div class="challenge-stat">40%</div>
-                    <div class="challenge-unit">wasted</div>
-                    <h3>Wrong Treatments</h3>
-                    <p>Farmers rely on neighbor advice or shop recommendations, often buying wrong or banned pesticides that waste money and harm the environment.</p>
+                    <div class="challenge-stat" data-i18n="challenge_3_stat">40%</div>
+                    <div class="challenge-unit" data-i18n="challenge_3_unit">wasted</div>
+                    <h3 data-i18n="challenge_3_title">Wrong Treatments</h3>
+                    <p data-i18n="challenge_3_desc">Farmers rely on neighbor advice or shop recommendations, often buying wrong or banned pesticides that waste money and harm the environment.</p>
                 </div>
                 <div class="challenge-card">
-                    <div class="challenge-stat">1</div>
-                    <div class="challenge-unit">language only</div>
-                    <h3>Language Barriers</h3>
-                    <p>Most agricultural apps are in English only. Rwanda's farmers need solutions in Kinyarwanda to be truly accessible and effective.</p>
+                    <div class="challenge-stat" data-i18n="challenge_4_stat">1</div>
+                    <div class="challenge-unit" data-i18n="challenge_4_unit">language only</div>
+                    <h3 data-i18n="challenge_4_title">Language Barriers</h3>
+                    <p data-i18n="challenge_4_desc">Most agricultural apps are in English only. Rwanda's farmers need solutions in Kinyarwanda to be truly accessible and effective.</p>
                 </div>
             </div>
         </div>
@@ -169,24 +178,24 @@
     <section class="before-after" id="before-after">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">The Transformation</span>
-                <h2>Before vs After AgroAssist AI</h2>
-                <p>Hover over each card to see the transformation.</p>
+                <span class="section-tag" data-i18n="before_after_tag">The Transformation</span>
+                <h2 data-i18n="before_after_title">Before vs After AgroAssist AI</h2>
+                <p data-i18n="before_after_desc">Hover over each card to see the transformation.</p>
             </div>
             <div class="flip-grid">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-front">
                             <div class="flip-icon before-icon"><i class="fa-solid fa-clock"></i></div>
-                            <h3>1–14 Days</h3>
-                            <p>Wait for an agronomist to diagnose your crop disease</p>
-                            <span class="flip-hint">Hover to see solution →</span>
+                            <h3 data-i18n="flip_1_front_h3">1–14 Days</h3>
+                            <p data-i18n="flip_1_front_p">Wait for an agronomist to diagnose your crop disease</p>
+                            <span class="flip-hint" data-i18n="flip_hint">Hover to see solution →</span>
                         </div>
                         <div class="flip-back">
                             <div class="flip-icon after-icon"><i class="fa-solid fa-bolt"></i></div>
                             <h3>&lt; 30 Seconds</h3>
-                            <p>Instant AI-powered diagnosis from a single photo</p>
-                            <span class="flip-badge">Solved</span>
+                            <p data-i18n="flip_1_back_p">Instant AI-powered diagnosis from a single photo</p>
+                            <span class="flip-badge" data-i18n="flip_badge">Solved</span>
                         </div>
                     </div>
                 </div>
@@ -194,15 +203,15 @@
                     <div class="flip-card-inner">
                         <div class="flip-front">
                             <div class="flip-icon before-icon"><i class="fa-solid fa-car"></i></div>
-                            <h3>Travel to Office</h3>
-                            <p>Drive hours to a district office for treatment guidance</p>
-                            <span class="flip-hint">Hover to see solution →</span>
+                            <h3 data-i18n="flip_2_front_h3">Travel to Office</h3>
+                            <p data-i18n="flip_2_front_p">Drive hours to a district office for treatment guidance</p>
+                            <span class="flip-hint" data-i18n="flip_hint">Hover to see solution →</span>
                         </div>
                         <div class="flip-back">
                             <div class="flip-icon after-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-                            <h3>Instant On-Device</h3>
-                            <p>Get treatment recommendations right on your phone</p>
-                            <span class="flip-badge">Solved</span>
+                            <h3 data-i18n="flip_2_back_h3">Instant On-Device</h3>
+                            <p data-i18n="flip_2_back_p">Get treatment recommendations right on your phone</p>
+                            <span class="flip-badge" data-i18n="flip_badge">Solved</span>
                         </div>
                     </div>
                 </div>
@@ -210,15 +219,15 @@
                     <div class="flip-card-inner">
                         <div class="flip-front">
                             <div class="flip-icon before-icon"><i class="fa-solid fa-question-circle"></i></div>
-                            <h3>Trial & Error</h3>
-                            <p>Buy the wrong pesticides and waste precious money</p>
-                            <span class="flip-hint">Hover to see solution →</span>
+                            <h3 data-i18n="flip_3_front_h3">Trial & Error</h3>
+                            <p data-i18n="flip_3_front_p">Buy the wrong pesticides and waste precious money</p>
+                            <span class="flip-hint" data-i18n="flip_hint">Hover to see solution →</span>
                         </div>
                         <div class="flip-back">
                             <div class="flip-icon after-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                            <h3>MOA Approved</h3>
-                            <p>Rwanda-approved pesticide list, instantly accessible</p>
-                            <span class="flip-badge">Solved</span>
+                            <h3 data-i18n="flip_3_back_h3">MOA Approved</h3>
+                            <p data-i18n="flip_3_back_p">Rwanda-approved pesticide list, instantly accessible</p>
+                            <span class="flip-badge" data-i18n="flip_badge">Solved</span>
                         </div>
                     </div>
                 </div>
@@ -226,15 +235,15 @@
                     <div class="flip-card-inner">
                         <div class="flip-front">
                             <div class="flip-icon before-icon"><i class="fa-solid fa-mask"></i></div>
-                            <h3>Middleman Pricing</h3>
-                            <p>Sell at the middleman's price with no negotiation power</p>
-                            <span class="flip-hint">Hover to see solution →</span>
+                            <h3 data-i18n="flip_4_front_h3">Middleman Pricing</h3>
+                            <p data-i18n="flip_4_front_p">Sell at the middleman's price with no negotiation power</p>
+                            <span class="flip-hint" data-i18n="flip_hint">Hover to see solution →</span>
                         </div>
                         <div class="flip-back">
                             <div class="flip-icon after-icon"><i class="fa-solid fa-chart-line"></i></div>
-                            <h3>Live Market Intel</h3>
-                            <p>Real-time Kigali wholesale prices in your pocket</p>
-                            <span class="flip-badge">Solved</span>
+                            <h3 data-i18n="flip_4_back_h3">Live Market Intel</h3>
+                            <p data-i18n="flip_4_back_p">Real-time Kigali wholesale prices in your pocket</p>
+                            <span class="flip-badge" data-i18n="flip_badge">Solved</span>
                         </div>
                     </div>
                 </div>
@@ -242,15 +251,15 @@
                     <div class="flip-card-inner">
                         <div class="flip-front">
                             <div class="flip-icon before-icon"><i class="fa-solid fa-cloud-rain"></i></div>
-                            <h3>Rain Wastes Money</h3>
-                            <p>Spray pesticides, then rain washes them off the same day</p>
-                            <span class="flip-hint">Hover to see solution →</span>
+                            <h3 data-i18n="flip_5_front_h3">Rain Wastes Money</h3>
+                            <p data-i18n="flip_5_front_p">Spray pesticides, then rain washes them off the same day</p>
+                            <span class="flip-hint" data-i18n="flip_hint">Hover to see solution →</span>
                         </div>
                         <div class="flip-back">
                             <div class="flip-icon after-icon"><i class="fa-solid fa-cloud-sun"></i></div>
-                            <h3>Spray Alerts</h3>
-                            <p>Weather-based safe-to-spray notifications before you begin</p>
-                            <span class="flip-badge">Solved</span>
+                            <h3 data-i18n="flip_5_back_h3">Spray Alerts</h3>
+                            <p data-i18n="flip_5_back_p">Weather-based safe-to-spray notifications before you begin</p>
+                            <span class="flip-badge" data-i18n="flip_badge">Solved</span>
                         </div>
                     </div>
                 </div>
@@ -258,15 +267,15 @@
                     <div class="flip-card-inner">
                         <div class="flip-front">
                             <div class="flip-icon before-icon"><i class="fa-solid fa-wifi-slash"></i></div>
-                            <h3>No Internet = No Help</h3>
-                            <p>Cloud-only apps fail when you need them most in rural fields</p>
-                            <span class="flip-hint">Hover to see solution →</span>
+                            <h3 data-i18n="flip_6_front_h3">No Internet = No Help</h3>
+                            <p data-i18n="flip_6_front_p">Cloud-only apps fail when you need them most in rural fields</p>
+                            <span class="flip-hint" data-i18n="flip_hint">Hover to see solution →</span>
                         </div>
                         <div class="flip-back">
                             <div class="flip-icon after-icon"><i class="fa-solid fa-wifi"></i></div>
-                            <h3>Works Offline</h3>
-                            <p>Queue scans offline, auto-sync when you're back online</p>
-                            <span class="flip-badge">Solved</span>
+                            <h3 data-i18n="flip_6_back_h3">Works Offline</h3>
+                            <p data-i18n="flip_6_back_p">Queue scans offline, auto-sync when you're back online</p>
+                            <span class="flip-badge" data-i18n="flip_badge">Solved</span>
                         </div>
                     </div>
                 </div>
@@ -278,16 +287,16 @@
     <section class="how-it-works" id="how-it-works">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">How It Works</span>
-                <h2>Three Simple Steps to Crop Health</h2>
-                <p>From diagnosis to treatment in seconds — no agronomist needed for initial assessment.</p>
+                <span class="section-tag" data-i18n="how_it_works_tag">How It Works</span>
+                <h2 data-i18n="how_it_works_title">Three Simple Steps to Crop Health</h2>
+                <p data-i18n="how_it_works_desc">From diagnosis to treatment in seconds — no agronomist needed for initial assessment.</p>
             </div>
             <div class="steps-showcase">
                 <div class="step-item step-item-reverse">
                     <div class="step-text">
                         <div class="step-number">1</div>
-                        <h3>Snap a Photo</h3>
-                        <p>Open the AgroAssist AI app and simply point your phone camera at any sick or unusual-looking leaf, stem, or fruit. Our AI is trained to work with any phone camera — even in cloudy weather or low light. No special equipment needed, just your phone and a diseased crop. Whether you're in your garden or deep in the field, one tap is all it takes to start the diagnosis.</p>
+                        <h3 data-i18n="step_1_title">Snap a Photo</h3>
+                        <p data-i18n="step_1_desc">Open the AgroAssist AI app and simply point your phone camera at any sick or unusual-looking leaf, stem, or fruit. Our AI is trained to work with any phone camera — even in cloudy weather or low light. No special equipment needed, just your phone and a diseased crop. Whether you're in your garden or deep in the field, one tap is all it takes to start the diagnosis.</p>
                     </div>
                     <div class="step-phone">
                         <div class="step-phone-img">
@@ -298,8 +307,8 @@
                 <div class="step-item">
                     <div class="step-text">
                         <div class="step-number">2</div>
-                        <h3>AI Diagnosis</h3>
-                        <p>In less than 30 seconds, our AI engine analyzes your photo and identifies the exact disease affecting your crop — complete with the disease name, how severe it is, and how confident the AI is in its diagnosis. It covers over 50 crop diseases across tomato, potato, maize, rice, coffee, and more. No waiting for an agronomist. No guessing. Just fast, accurate answers right on your screen.</p>
+                        <h3 data-i18n="step_2_title">AI Diagnosis</h3>
+                        <p data-i18n="step_2_desc">In less than 30 seconds, our AI engine analyzes your photo and identifies the exact disease affecting your crop — complete with the disease name, how severe it is, and how confident the AI is in its diagnosis. It covers over 50 crop diseases across tomato, potato, maize, rice, coffee, and more. No waiting for an agronomist. No guessing. Just fast, accurate answers right on your screen.</p>
                     </div>
                     <div class="step-phone">
                         <div class="step-phone-img">
@@ -310,8 +319,8 @@
                 <div class="step-item step-item-reverse">
                     <div class="step-text">
                         <div class="step-number">3</div>
-                        <h3>Get Treatment</h3>
-                        <p>Once the disease is identified, AgroAssist AI recommends the best treatment options — including Rwanda-approved pesticides with exact dosage, how to apply them, and where to buy them locally in your district. You also get safety intervals for harvesting, so your produce stays safe for consumption. Everything is available in both English and Kinyarwanda, so you never miss a detail.</p>
+                        <h3 data-i18n="step_3_title">Get Treatment</h3>
+                        <p data-i18n="step_3_desc">Once the disease is identified, AgroAssist AI recommends the best treatment options — including Rwanda-approved pesticides with exact dosage, how to apply them, and where to buy them locally in your district. You also get safety intervals for harvesting, so your produce stays safe for consumption. Everything is available in both English and Kinyarwanda, so you never miss a detail.</p>
                     </div>
                     <div class="step-phone">
                         <div class="step-phone-img">
@@ -324,38 +333,38 @@
     </section>
 
     <!-- Impact Metrics -->
-    <section class="impact" id="impact">
+    <section class="impact" id="impact-metrics">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Measurable Impact</span>
-                <h2>What We Deliver for Farmers</h2>
-                <p>Success is measured in farmer outcomes — not just features shipped.</p>
+                <span class="section-tag" data-i18n="impact_m_tag">Measurable Impact</span>
+                <h2 data-i18n="impact_m_title">What We Deliver for Farmers</h2>
+                <p data-i18n="impact_m_desc">Success is measured in farmer outcomes — not just features shipped.</p>
             </div>
             <div class="impact-grid">
                 <div class="impact-card">
                     <div class="impact-number">+20–30%</div>
-                    <h3>Yield Retention</h3>
-                    <p>Early blight detection stops total harvest failure before it spreads.</p>
+                    <h3 data-i18n="impact_m_1_title">Yield Retention</h3>
+                    <p data-i18n="impact_m_1_desc">Early blight detection stops total harvest failure before it spreads.</p>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">−15%</div>
-                    <h3>Input Cost Savings</h3>
-                    <p>Right pesticide + weather check = zero wasted sprays.</p>
+                    <h3 data-i18n="impact_m_2_title">Input Cost Savings</h3>
+                    <p data-i18n="impact_m_2_desc">Right pesticide + weather check = zero wasted sprays.</p>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">+10–15%</div>
-                    <h3>Revenue Uplift</h3>
-                    <p>Market data removes middleman exploitation at sale.</p>
+                    <h3 data-i18n="impact_m_3_title">Revenue Uplift</h3>
+                    <p data-i18n="impact_m_3_desc">Market data removes middleman exploitation at sale.</p>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">30s</div>
-                    <h3>Diagnosis Time</h3>
-                    <p>From waiting weeks for an agronomist to an instant AI answer.</p>
+                    <h3 data-i18n="impact_m_4_title">Diagnosis Time</h3>
+                    <p data-i18n="impact_m_4_desc">From waiting weeks for an agronomist to an instant AI answer.</p>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">100%</div>
-                    <h3>Connectivity Resilience</h3>
-                    <p>Offline mode queues and syncs — no data lost in rural fields.</p>
+                    <h3 data-i18n="impact_m_5_title">Connectivity Resilience</h3>
+                    <p data-i18n="impact_m_5_desc">Offline mode queues and syncs — no data lost in rural fields.</p>
                 </div>
             </div>
         </div>
@@ -365,74 +374,74 @@
     <section class="features" id="features">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Features</span>
-                <h2>Everything Farmers Need in One App</h2>
-                <p>From AI-powered diagnosis to expert consultations, AgroAssist AI is a complete agricultural intelligence platform.</p>
+                <span class="section-tag" data-i18n="features_tag">Features</span>
+                <h2 data-i18n="features_title">Everything Farmers Need in One App</h2>
+                <p data-i18n="features_desc">From AI-powered diagnosis to expert consultations, AgroAssist AI is a complete agricultural intelligence platform.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card feature-card-large">
                     <div class="feature-icon">
                         <i class="fa-solid fa-microscope"></i>
                     </div>
-                    <h3>AI Crop Disease Diagnosis</h3>
-                    <p>Take a photo of any diseased crop and get instant diagnosis with disease name, severity percentage, and confidence score. Our AI identifies 50+ diseases across tomato, potato, maize, rice, coffee, and more.</p>
-                    <div class="feature-tag">Core Feature</div>
+                    <h3 data-i18n="feature_1_title">AI Crop Disease Diagnosis</h3>
+                    <p data-i18n="feature_1_desc">Take a photo of any diseased crop and get instant diagnosis with disease name, severity percentage, and confidence score. Our AI identifies 50+ diseases across tomato, potato, maize, rice, coffee, and more.</p>
+                    <div class="feature-tag" data-i18n="feature_1_tag">Core Feature</div>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fa-solid fa-pills"></i>
                     </div>
-                    <h3>Rwanda-Approved Medicine</h3>
-                    <p>Only recommends RICA/RAB-registered agrochemicals with exact dosage, active ingredients, and safety class.</p>
+                    <h3 data-i18n="feature_2_title">Rwanda-Approved Medicine</h3>
+                    <p data-i18n="feature_2_desc">Only recommends RICA/RAB-registered agrochemicals with exact dosage, active ingredients, and safety class.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fa-solid fa-wifi-slash"></i>
                     </div>
-                    <h3>Works Offline</h3>
-                    <p>Scans queue locally and sync when internet returns. Built for Rwanda's rural connectivity challenges.</p>
+                    <h3 data-i18n="feature_3_title">Works Offline</h3>
+                    <p data-i18n="feature_3_desc">Scans queue locally and sync when internet returns. Built for Rwanda's rural connectivity challenges.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fa-solid fa-language"></i>
                     </div>
-                    <h3>English & Kinyarwanda</h3>
-                    <p>Full bilingual support with one-tap language toggle. Every screen, every message in your language.</p>
+                    <h3 data-i18n="feature_4_title">English & Kinyarwanda</h3>
+                    <p data-i18n="feature_4_desc">Full bilingual support with one-tap language toggle. Every screen, every message in your language.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fa-solid fa-user-doctor"></i>
                     </div>
-                    <h3>Expert Consultations</h3>
-                    <p>Connect directly with certified agronomists in your district for personalized advice on complex cases.</p>
+                    <h3 data-i18n="feature_5_title">Expert Consultations</h3>
+                    <p data-i18n="feature_5_desc">Connect directly with certified agronomists in your district for personalized advice on complex cases.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fa-solid fa-cloud-sun"></i>
                     </div>
-                    <h3>Weather Intelligence</h3>
-                    <p>GPS-based weather data with spray advisory (safe/unsafe to spray) and 3-day forecast for your location.</p>
+                    <h3 data-i18n="feature_6_title">Weather Intelligence</h3>
+                    <p data-i18n="feature_6_desc">GPS-based weather data with spray advisory (safe/unsafe to spray) and 3-day forecast for your location.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <h3>Market Prices</h3>
-                    <p>AI-powered real-time crop market prices for Rwanda. Know what your harvest is worth before you sell.</p>
+                    <h3 data-i18n="feature_7_title">Market Prices</h3>
+                    <p data-i18n="feature_7_desc">AI-powered real-time crop market prices for Rwanda. Know what your harvest is worth before you sell.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fa-solid fa-file-pdf"></i>
                     </div>
-                    <h3>PDF Reports</h3>
-                    <p>Export branded diagnostic certificates with full disease analysis, treatment plan, and expert recommendations.</p>
+                    <h3 data-i18n="feature_8_title">PDF Reports</h3>
+                    <p data-i18n="feature_8_desc">Export branded diagnostic certificates with full disease analysis, treatment plan, and expert recommendations.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fa-solid fa-headset"></i>
                     </div>
-                    <h3>Voice AI Consultant</h3>
-                    <p>Live voice conversation with an AI agronomist. Designed for accessibility — works even for visually impaired farmers.</p>
+                    <h3 data-i18n="feature_9_title">Voice AI Consultant</h3>
+                    <p data-i18n="feature_9_desc">Live voice conversation with an AI agronomist. Designed for accessibility — works even for visually impaired farmers.</p>
                 </div>
             </div>
         </div>
@@ -442,42 +451,42 @@
     <section class="impact" id="impact">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Impact</span>
-                <h2>Transforming Agriculture Across Rwanda</h2>
-                <p>Across all 30 districts of Rwanda, AgroAssist AI is empowering farmers with the intelligence they need to thrive.</p>
+                <span class="section-tag" data-i18n="impact_tag">Impact</span>
+                <h2 data-i18n="impact_title">Transforming Agriculture Across Rwanda</h2>
+                <p data-i18n="impact_desc">Across all 30 districts of Rwanda, AgroAssist AI is empowering farmers with the intelligence they need to thrive.</p>
             </div>
             <div class="impact-grid">
                 <div class="impact-card">
                     <div class="impact-number">30</div>
-                    <div class="impact-label">Targeting Districts</div>
-                    <div class="impact-desc">Expanding across all 5 provinces of Rwanda</div>
+                    <div class="impact-label" data-i18n="impact_1_label">Targeting Districts</div>
+                    <div class="impact-desc" data-i18n="impact_1_desc">Expanding across all 5 provinces of Rwanda</div>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">50+</div>
-                    <div class="impact-label">Diseases Detected</div>
-                    <div class="impact-desc">Comprehensive database of crop diseases</div>
+                    <div class="impact-label" data-i18n="impact_2_label">Diseases Detected</div>
+                    <div class="impact-desc" data-i18n="impact_2_desc">Comprehensive database of crop diseases</div>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">37+</div>
-                    <div class="impact-label">Approved Medicines</div>
-                    <div class="impact-desc">RICA/RAB registered agrochemicals</div>
+                    <div class="impact-label" data-i18n="impact_3_label">Approved Medicines</div>
+                    <div class="impact-desc" data-i18n="impact_3_desc">RICA/RAB registered agrochemicals</div>
                 </div>
                 <div class="impact-card">
-                    <div class="impact-number">2</div>
-                    <div class="impact-label">Languages</div>
-                    <div class="impact-desc">English and Kinyarwanda support</div>
+                    <div class="impact-number">3</div>
+                    <div class="impact-label" data-i18n="impact_4_label">Languages</div>
+                    <div class="impact-desc" data-i18n="impact_4_desc">English, Kinyarwanda & Kiswahili support</div>
                 </div>
             </div>
             <div class="impact-quote">
                 <div class="quote-icon">
                     <i class="fa-solid fa-quote-left"></i>
                 </div>
-                <blockquote>
+                <blockquote data-i18n="impact_quote">
                     "AgroAssist AI gives me the confidence to treat my crops properly. Before, I had to walk 2 hours to find an agronomist. Now I just take a photo and get answers in seconds."
                 </blockquote>
                 <div class="quote-author">
-                    <span class="author-name">— Rwandan Farmer</span>
-                    <span class="author-location">Musanze District</span>
+                    <span class="author-name" data-i18n="impact_author">— Rwandan Farmer</span>
+                    <span class="author-location" data-i18n="impact_location">Musanze District</span>
                 </div>
             </div>
         </div>
@@ -488,24 +497,24 @@
         <div class="container">
             <div class="mission-content">
                 <div class="mission-text">
-                    <span class="section-tag">Our Mission</span>
-                    <h2>Every Farmer's 5 Minutes Count</h2>
-                    <p>When a farmer sees a diseased leaf, the clock starts. In Rwanda, getting a proper diagnosis means traveling hours to find an agronomist — and waiting days or even weeks for an answer. By then, the disease has spread, the damage is done, and the harvest is lost. Every season, smallholder farmers lose up to 30% of their crops to preventable diseases, simply because help comes too late.</p>
-                    <p>AgroAssist AI changes that. We deliver a professional-grade diagnosis in under 30 seconds — right from a farmer's phone. That single shift from weeks to seconds is the foundation of everything we do. But speed alone isn't enough. We believe every smallholder farmer deserves the same agricultural intelligence that large commercial farms take for granted — whether they speak English or Kinyarwanda, and whether they have internet access or not.</p>
-                    <p>Our mission is clear: make expert-level crop diagnosis free, instant, and accessible to every farming family across Rwanda — so no farmer has to lose a season because help was too far away.</p>
+                    <span class="section-tag" data-i18n="mission_tag">Our Mission</span>
+                    <h2 data-i18n="mission_title">Every Farmer's 5 Minutes Count</h2>
+                    <p data-i18n="mission_p1">When a farmer sees a diseased leaf, the clock starts. In Rwanda, getting a proper diagnosis means traveling hours to find an agronomist — and waiting days or even weeks for an answer. By then, the disease has spread, the damage is done, and the harvest is lost. Every season, smallholder farmers lose up to 30% of their crops to preventable diseases, simply because help comes too late.</p>
+                    <p data-i18n="mission_p2">AgroAssist AI changes that. We deliver a professional-grade diagnosis in under 30 seconds — right from a farmer's phone. That single shift from weeks to seconds is the foundation of everything we do. But speed alone isn't enough. We believe every smallholder farmer deserves the same agricultural intelligence that large commercial farms take for granted — whether they speak English or Kinyarwanda, and whether they have internet access or not.</p>
+                    <p data-i18n="mission_p3">Our mission is clear: make expert-level crop diagnosis free, instant, and accessible to every farming family across Rwanda — so no farmer has to lose a season because help was too far away.</p>
                 </div>
                 <div class="mission-visual">
                     <div class="mission-stat-card">
                         <div class="mission-stat-number">2M+</div>
-                        <div class="mission-stat-label">Farmers in Rwanda</div>
+                        <div class="mission-stat-label" data-i18n="mission_stat_1">Farmers in Rwanda</div>
                     </div>
                     <div class="mission-stat-card">
                         <div class="mission-stat-number">1:1,000+</div>
-                        <div class="mission-stat-label">Agronomist Ratio</div>
+                        <div class="mission-stat-label" data-i18n="mission_stat_2">Agronomist Ratio</div>
                     </div>
                     <div class="mission-stat-card">
                         <div class="mission-stat-number">~30%</div>
-                        <div class="mission-stat-label">Annual Crop Loss</div>
+                        <div class="mission-stat-label" data-i18n="mission_stat_3">Annual Crop Loss</div>
                     </div>
                 </div>
             </div>
@@ -516,9 +525,9 @@
     <section class="team" id="team">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Our Team</span>
-                <h2>Meet the People Behind AgroAssist AI</h2>
-                <p>A passionate team of engineers, agronomists, and business leaders building the future of farming in Rwanda.</p>
+                <span class="section-tag" data-i18n="team_tag">Our Team</span>
+                <h2 data-i18n="team_title">Meet the People Behind AgroAssist AI</h2>
+                <p data-i18n="team_desc">A passionate team of engineers, agronomists, and business leaders building the future of farming in Rwanda.</p>
             </div>
             <div class="team-grid">
                 <div class="team-card team-card-founder">
@@ -526,8 +535,8 @@
                         <img src="honore.jpeg" alt="Ninziza Shema Honore">
                     </div>
                     <h3>Ninziza Shema Honore</h3>
-                    <div class="team-role">Founder & CEO</div>
-                    <div class="team-role-detail">Software Engineer</div>
+                    <div class="team-role" data-i18n="team_honore_role">Founder & CEO</div>
+                    <div class="team-role-detail" data-i18n="team_honore_detail">Software Engineer</div>
                     <div class="team-social">
                         <a href="https://www.linkedin.com/in/ninziza-shema-honore-b4400421a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/ninzizah" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -538,8 +547,8 @@
                         <img src="flora Ishimwe Ngabonziza photo 2026.png" alt="Ngabonziza Ishimwe Flora">
                     </div>
                     <h3>Ngabonziza Ishimwe Flora</h3>
-                    <div class="team-role">Business Development</div>
-                    <div class="team-role-detail">Partnerships Lead</div>
+                    <div class="team-role" data-i18n="team_flora_role">Business Development</div>
+                    <div class="team-role-detail" data-i18n="team_flora_detail">Partnerships Lead</div>
                     <div class="team-social">
                         <a href="https://www.linkedin.com/in/ngabonziza-i-flora-a6732b262/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
@@ -549,8 +558,8 @@
                         <img src="tumbwe.jpeg" alt="Tumbwe Serge">
                     </div>
                     <h3>Tumbwe Serge</h3>
-                    <div class="team-role">Mobile Developer</div>
-                    <div class="team-role-detail">App Architecture</div>
+                    <div class="team-role" data-i18n="team_serge_role">Mobile Developer</div>
+                    <div class="team-role-detail" data-i18n="team_serge_detail">App Architecture</div>
                     <div class="team-social">
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -561,8 +570,8 @@
                         <img src="cedrick.jpeg" alt="Karamuka Cedrick">
                     </div>
                     <h3>Karamuka Cedrick</h3>
-                    <div class="team-role">AI/ML Engineer</div>
-                    <div class="team-role-detail">Intelligence Systems</div>
+                    <div class="team-role" data-i18n="team_cedrick_role">AI/ML Engineer</div>
+                    <div class="team-role-detail" data-i18n="team_cedrick_detail">Intelligence Systems</div>
                     <div class="team-social">
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -573,8 +582,8 @@
                         <img src="valerien.jpeg" alt="Uwayezu Valerien">
                     </div>
                     <h3>Uwayezu Valerien</h3>
-                    <div class="team-role">Agronomist</div>
-                    <div class="team-role-detail">Agricultural Expert</div>
+                    <div class="team-role" data-i18n="team_valerien_role">Agronomist</div>
+                    <div class="team-role-detail" data-i18n="team_valerien_detail">Agricultural Expert</div>
                     <div class="team-social">
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
@@ -588,29 +597,29 @@
         <div class="container">
             <div class="download-content">
                 <div class="download-text">
-                    <span class="section-tag section-tag-light">Get The App</span>
-                    <h2>Start Diagnosing Your Crops Today</h2>
-                    <p>Download AgroAssist AI for free. Available as Android APK and Progressive Web App. Works on any smartphone.</p>
+                    <span class="section-tag section-tag-light" data-i18n="download_tag">Get The App</span>
+                    <h2 data-i18n="download_title">Start Diagnosing Your Crops Today</h2>
+                    <p data-i18n="download_desc">Download AgroAssist AI for free. Available as Android APK and Progressive Web App. Works on any smartphone.</p>
                     <div class="download-buttons">
                         <a href="AgroAssist_v1.2.apk" class="btn btn-primary btn-lg" download>
                             <i class="fa-solid fa-download"></i>
-                            Download APK
+                            <span data-i18n="download_btn_apk">Download APK</span>
                         </a>
                         <a href="#team" class="btn btn-outline-light btn-lg">
                             <i class="fa-solid fa-globe"></i>
-                            Coming Soon
+                            <span data-i18n="download_btn_web">Coming Soon</span>
                         </a>
                     </div>
                     <div class="download-meta">
-                        <span><i class="fa-solid fa-shield-halved"></i> Free to use</span>
-                        <span><i class="fa-solid fa-database"></i> 10 free scans</span>
-                        <span><i class="fa-solid fa-mobile-screen-button"></i> Any Android phone</span>
+                        <span><i class="fa-solid fa-shield-halved"></i> <span data-i18n="download_meta_1">Free to use</span></span>
+                        <span><i class="fa-solid fa-database"></i> <span data-i18n="download_meta_2">10 free scans</span></span>
+                        <span><i class="fa-solid fa-mobile-screen-button"></i> <span data-i18n="download_meta_3">Any Android phone</span></span>
                     </div>
                 </div>
                 <div class="download-visual">
                     <div class="qr-code-placeholder">
                         <img src="agro assist qr-code.png" alt="Scan to Download AgroAssist AI" class="qr-image">
-                        <span>Scan to Download</span>
+                        <span data-i18n="download_qr">Scan to Download</span>
                     </div>
                 </div>
             </div>
@@ -621,9 +630,9 @@
     <section class="partners">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Partners</span>
-                <h2>Supported By</h2>
-                <p>We're proud to work with organizations that share our vision for transforming African agriculture.</p>
+                <span class="section-tag" data-i18n="partners_tag">Partners</span>
+                <h2 data-i18n="partners_title">Supported By</h2>
+                <p data-i18n="partners_desc">We're proud to work with organizations that share our vision for transforming African agriculture.</p>
             </div>
             <div class="partners-track">
                 <div class="partner-logo">
@@ -642,7 +651,7 @@
                         <img src="icon1.png" alt="AgroAssist AI Logo" class="logo-img">
                         <span class="logo-text">AgroAssist<span class="logo-ai">AI</span></span>
                     </a>
-                    <p>AI-powered crop disease diagnosis platform for Rwandan smallholder farmers. Building the future of agriculture, one scan at a time.</p>
+                    <p data-i18n="footer_desc">AI-powered crop disease diagnosis platform for Rwandan smallholder farmers. Building the future of agriculture, one scan at a time.</p>
                     <div class="footer-social">
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
@@ -651,29 +660,29 @@
                     </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Product</h4>
-                    <a href="#features">Features</a>
-                    <a href="#download">Download</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">API</a>
+                    <h4 data-i18n="footer_product">Product</h4>
+                    <a href="#features" data-i18n="footer_features">Features</a>
+                    <a href="#download" data-i18n="footer_download">Download</a>
+                    <a href="#" data-i18n="footer_pricing">Pricing</a>
+                    <a href="#" data-i18n="footer_api">API</a>
                 </div>
                 <div class="footer-links">
-                    <h4>Company</h4>
-                    <a href="#team">Team</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Careers</a>
+                    <h4 data-i18n="footer_company">Company</h4>
+                    <a href="#team" data-i18n="footer_team">Team</a>
+                    <a href="#" data-i18n="footer_about">About</a>
+                    <a href="#" data-i18n="footer_contact">Contact</a>
+                    <a href="#" data-i18n="footer_careers">Careers</a>
                 </div>
                 <div class="footer-links">
-                    <h4>Contact</h4>
+                    <h4 data-i18n="footer_contact_title">Contact</h4>
                     <a href="mailto:agroassistrwanda@gmail.com"><i class="fa-solid fa-envelope"></i> agroassistrwanda@gmail.com</a>
                     <a href="tel:+250788904242"><i class="fa-solid fa-phone"></i> +250 788 904 242</a>
                     <a href="https://wa.me/250788904242" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                    <a href="#"><i class="fa-solid fa-location-dot"></i> Kicukiro, Kigali, Rwanda</a>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i> <span data-i18n="footer_address">Kicukiro, Kigali, Rwanda</span></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 AgroAssist AI. All rights reserved. Built in Rwanda for African farmers.</p>
+                <p data-i18n="footer_copyright">&copy; 2026 AgroAssist AI. All rights reserved. Built in Rwanda for African farmers.</p>
             </div>
         </div>
     </footer>

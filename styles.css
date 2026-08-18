@@ -1633,6 +1633,80 @@ img {
     z-index: 999;
 }
 
+/* --- Language Switcher --- */
+.lang-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--stone-600);
+    transition: all 0.2s;
+    user-select: none;
+}
+
+.lang-switcher:hover {
+    background: var(--stone-100);
+    color: var(--green-700);
+}
+
+.lang-switcher i {
+    font-size: 14px;
+}
+
+.lang-current {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.lang-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--white);
+    border: 1px solid var(--stone-200);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    z-index: 1001;
+    min-width: 80px;
+}
+
+.lang-dropdown.open {
+    display: block;
+}
+
+.lang-option {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    background: none;
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--stone-600);
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.15s;
+}
+
+.lang-option:hover {
+    background: var(--green-50);
+    color: var(--green-700);
+}
+
+.lang-option.active {
+    background: var(--green-700);
+    color: var(--white);
+}
+
 /* --- Responsive --- */
 @media (max-width: 1024px) {
     .hero-container {
