@@ -1756,48 +1756,164 @@ img {
         display: block;
     }
 
+    .hero {
+        padding: 100px 0 60px;
+    }
+
+    .hero-container {
+        gap: 0;
+    }
+
     .hero-content h1 {
-        font-size: 36px;
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
     }
 
     .section-header h2 {
-        font-size: 30px;
+        font-size: 26px;
+    }
+
+    .section-header p {
+        font-size: 15px;
+    }
+
+    .challenges {
+        padding: 60px 0;
     }
 
     .challenges-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .challenge-card {
+        padding: 24px;
+    }
+
+    .challenge-stat {
+        font-size: 32px;
+    }
+
+    .before-after {
+        padding: 60px 0;
+    }
+
+    .flip-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .flip-card {
+        height: 220px;
+    }
+
+    .how-it-works {
+        padding: 60px 0;
+    }
+
+    .steps-showcase {
+        gap: 40px;
+    }
+
+    .step-text h3 {
+        font-size: 24px;
+    }
+
+    .step-text p {
+        font-size: 15px;
+    }
+
+    .step-phone-img {
+        width: 180px;
+        height: 360px;
+    }
+
+    .features {
+        padding: 60px 0;
     }
 
     .features-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .feature-card {
+        padding: 24px;
     }
 
     .feature-card-large {
         grid-column: span 1;
     }
 
-    .flip-grid {
-        grid-template-columns: 1fr;
+    .impact {
+        padding: 60px 0;
     }
 
     .impact-grid {
         grid-template-columns: 1fr 1fr;
+        gap: 16px;
     }
 
-    .team-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .impact-grid {
-        grid-template-columns: 1fr;
+    .impact-card {
+        padding: 20px 16px;
     }
 
     .impact-number {
         font-size: 28px;
+    }
+
+    .mission {
+        padding: 60px 0;
+    }
+
+    .mission-visual {
+        flex-direction: column;
+    }
+
+    .team {
+        padding: 60px 0;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .download {
+        padding: 60px 0;
+    }
+
+    .download-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .download-buttons {
+        justify-content: center;
+    }
+
+    .download-meta {
+        justify-content: center;
+    }
+
+    .download-visual {
+        display: none;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer {
+        padding: 40px 0 24px;
     }
 
     .footer-bottom {
@@ -1809,17 +1925,34 @@ img {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 120px 0 60px;
+        padding: 90px 0 40px;
     }
 
     .hero-content h1 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
     }
 
     .hero-stats {
         flex-direction: column;
-        gap: 16px;
+        gap: 12px;
         align-items: center;
+    }
+
+    .section-header h2 {
+        font-size: 22px;
+    }
+
+    .challenges, .before-after, .how-it-works, .features, .impact, .mission, .team, .download {
+        padding: 48px 0;
     }
 
     .impact-grid {
@@ -1831,6 +1964,11 @@ img {
     }
 
     .download-text h2 {
-        font-size: 28px;
+        font-size: 24px;
+    }
+
+    .step-phone-img {
+        width: 160px;
+        height: 320px;
     }
 }
