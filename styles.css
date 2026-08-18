@@ -1619,10 +1619,10 @@ img {
 }
 
 /* --- Mobile Menu --- */
-.mobile-menu-active .nav-links {
+.nav-links.mobile-menu-active {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: var(--nav-height);
     left: 0;
     right: 0;
@@ -1630,6 +1630,7 @@ img {
     padding: 24px;
     border-bottom: 1px solid var(--stone-200);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 999;
 }
 
 /* --- Responsive --- */
@@ -1798,7 +1799,6 @@ img {
     .impact-number {
         font-size: 28px;
     }
-}
 
     .footer-bottom {
         flex-direction: column;
