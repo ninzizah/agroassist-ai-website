@@ -34,6 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+            navLinks.classList.remove('mobile-menu-active');
+            mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        }
+    });
+
     // --- Scroll Animations (Intersection Observer) ---
     const animateElements = document.querySelectorAll(
         '.challenge-card, .step, .feature-card, .impact-card, .team-card, .section-header, .impact-quote, .download-content'
@@ -56,6 +64,13 @@ document.addEventListener('DOMContentLoaded', () => {
     animateElements.forEach(el => {
         el.classList.add('fade-in');
         observer.observe(el);
+    });
+
+    // --- Flip Card Tap Support (Mobile) ---
+    document.querySelectorAll('.flip-card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('tap-flipped');
+        });
     });
 
     // --- Smooth scroll for anchor links ---

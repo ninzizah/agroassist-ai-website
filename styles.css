@@ -1631,6 +1631,29 @@ img {
     border-bottom: 1px solid var(--stone-200);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     z-index: 999;
+    gap: 0;
+}
+
+.nav-links.mobile-menu-active a {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--stone-100);
+    font-size: 15px;
+}
+
+.nav-links.mobile-menu-active a:last-child {
+    border-bottom: none;
+}
+
+.nav-links.mobile-menu-active .lang-switcher {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--stone-100);
+}
+
+.nav-links.mobile-menu-active .lang-dropdown {
+    position: static;
+    box-shadow: none;
+    border: none;
+    margin-top: 8px;
 }
 
 /* --- Language Switcher --- */
@@ -1705,6 +1728,11 @@ img {
 .lang-option.active {
     background: var(--green-700);
     color: var(--white);
+}
+
+/* --- Flip Card Tap Support (Mobile) --- */
+.flip-card.tap-flipped .flip-card-inner {
+    transform: rotateY(180deg);
 }
 
 /* --- Responsive --- */
@@ -1830,6 +1858,15 @@ img {
         display: block;
     }
 
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
     .hero {
         padding: 100px 0 60px;
     }
@@ -1840,10 +1877,35 @@ img {
 
     .hero-content h1 {
         font-size: 32px;
+        letter-spacing: -1px;
     }
 
     .hero-subtitle {
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .hero-stats {
+        flex-direction: row;
+        gap: 24px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-stat-number {
+        font-size: 24px;
     }
 
     .section-header {
@@ -1855,7 +1917,7 @@ img {
     }
 
     .section-header p {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .challenges {
@@ -1885,7 +1947,11 @@ img {
     }
 
     .flip-card {
-        height: 220px;
+        height: 200px;
+    }
+
+    .flip-hint {
+        display: none;
     }
 
     .how-it-works {
@@ -1897,11 +1963,12 @@ img {
     }
 
     .step-text h3 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .step-text p {
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 1.6;
     }
 
     .step-phone-img {
@@ -1932,19 +1999,39 @@ img {
 
     .impact-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 16px;
+        gap: 12px;
     }
 
     .impact-card {
-        padding: 20px 16px;
+        padding: 20px 12px;
     }
 
     .impact-number {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .impact-label {
+        font-size: 13px;
+    }
+
+    .impact-desc {
+        font-size: 12px;
+    }
+
+    .impact-quote blockquote {
+        font-size: 16px;
     }
 
     .mission {
         padding: 60px 0;
+    }
+
+    .mission-text h2 {
+        font-size: 26px;
+    }
+
+    .mission-text p {
+        font-size: 14px;
     }
 
     .mission-visual {
@@ -1957,7 +2044,22 @@ img {
 
     .team-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 16px;
+        gap: 12px;
+    }
+
+    .team-card h3 {
+        font-size: 13px;
+        padding: 12px 12px 0;
+    }
+
+    .team-role {
+        font-size: 12px;
+        padding: 0 12px;
+    }
+
+    .team-role-detail {
+        font-size: 11px;
+        padding: 0 12px;
     }
 
     .download {
@@ -1969,6 +2071,14 @@ img {
         text-align: center;
     }
 
+    .download-text h2 {
+        font-size: 28px;
+    }
+
+    .download-text p {
+        font-size: 15px;
+    }
+
     .download-buttons {
         justify-content: center;
     }
@@ -1978,7 +2088,22 @@ img {
     }
 
     .download-visual {
-        display: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .qr-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .partners {
+        padding: 40px 0;
+    }
+
+    .partner-logo {
+        width: 180px;
+        height: 180px;
     }
 
     .footer-grid {
@@ -1998,51 +2123,216 @@ img {
 }
 
 @media (max-width: 480px) {
+    .logo-img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
     .hero {
-        padding: 90px 0 40px;
+        padding: 80px 0 40px;
     }
 
     .hero-content h1 {
         font-size: 26px;
+        letter-spacing: -0.5px;
     }
 
     .hero-subtitle {
         font-size: 14px;
+        margin-bottom: 24px;
     }
 
-    .hero-cta {
-        flex-direction: column;
-        align-items: center;
+    .hero-cta .btn {
+        max-width: 260px;
+        padding: 14px 24px;
     }
 
     .hero-stats {
-        flex-direction: column;
-        gap: 12px;
-        align-items: center;
+        gap: 16px;
+    }
+
+    .hero-stat-number {
+        font-size: 22px;
+    }
+
+    .hero-stat-label {
+        font-size: 11px;
     }
 
     .section-header h2 {
         font-size: 22px;
     }
 
+    .section-header p {
+        font-size: 13px;
+    }
+
     .challenges, .before-after, .how-it-works, .features, .impact, .mission, .team, .download {
         padding: 48px 0;
     }
 
-    .impact-grid {
-        grid-template-columns: 1fr;
+    .challenge-card {
+        padding: 20px;
     }
 
-    .team-grid {
-        grid-template-columns: 1fr;
+    .challenge-stat {
+        font-size: 28px;
     }
 
-    .download-text h2 {
-        font-size: 24px;
+    .flip-card {
+        height: 180px;
+    }
+
+    .flip-front,
+    .flip-back {
+        padding: 20px 16px;
+    }
+
+    .flip-front h3,
+    .flip-back h3 {
+        font-size: 16px;
+    }
+
+    .flip-front p,
+    .flip-back p {
+        font-size: 12px;
+    }
+
+    .step-text h3 {
+        font-size: 20px;
+    }
+
+    .step-text p {
+        font-size: 13px;
     }
 
     .step-phone-img {
-        width: 160px;
-        height: 320px;
+        width: 150px;
+        height: 300px;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .feature-card h3 {
+        font-size: 16px;
+    }
+
+    .feature-card p {
+        font-size: 13px;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .impact-card {
+        padding: 16px 10px;
+    }
+
+    .impact-number {
+        font-size: 22px;
+    }
+
+    .impact-label {
+        font-size: 12px;
+    }
+
+    .impact-quote blockquote {
+        font-size: 14px;
+    }
+
+    .mission-text h2 {
+        font-size: 22px;
+    }
+
+    .mission-stat-card {
+        padding: 16px;
+    }
+
+    .mission-stat-number {
+        font-size: 22px;
+    }
+
+    .mission-stat-label {
+        font-size: 13px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .team-avatar {
+        aspect-ratio: 1/1;
+    }
+
+    .team-card h3 {
+        font-size: 12px;
+        padding: 10px 10px 0;
+    }
+
+    .team-role {
+        font-size: 11px;
+        padding: 0 10px;
+    }
+
+    .team-role-detail {
+        font-size: 10px;
+        padding: 0 10px;
+    }
+
+    .team-social a {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .download-text h2 {
+        font-size: 22px;
+    }
+
+    .download-text p {
+        font-size: 14px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-buttons .btn {
+        width: 100%;
+        max-width: 260px;
+        justify-content: center;
+    }
+
+    .download-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .qr-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .partner-logo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .footer {
+        padding: 32px 0 20px;
+    }
+
+    .footer-brand p {
+        font-size: 13px;
     }
 }
