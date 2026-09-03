@@ -5,9 +5,12 @@
     "nav_impact": "Impact",
     "nav_team": "Team",
     "nav_download": "Download App",
-
     "hero_title_1": "AI-Powered Crop Disease",
-    "hero_typing": ["Diagnose", "Treat", "Prevent"],
+    "hero_typing": [
+      "Diagnose",
+      "Treat",
+      "Prevent"
+    ],
     "hero_title_2": "for Rwanda",
     "hero_subtitle": "Snap a photo of your crop. Get instant AI diagnosis, treatment recommendations, and expert support — built for Rwandan farmers, in English and Kinyarwanda.",
     "hero_cta_download": "Download Free App",
@@ -18,7 +21,6 @@
     "hero_stat_2_label": "Diseases Detected",
     "hero_stat_3_number": "3",
     "hero_stat_3_label": "Languages",
-
     "challenges_tag": "Challenges",
     "challenges_title": "Rwandan Farmers Lose Crops Every Season",
     "challenges_desc": "Smallholder farmers produce 80% of Rwanda's food, but face critical challenges that threaten their livelihoods.",
@@ -38,7 +40,6 @@
     "challenge_4_unit": "language only",
     "challenge_4_title": "Language Barriers",
     "challenge_4_desc": "Most agricultural apps are in English only. Rwanda's farmers need solutions in Kinyarwanda to be truly accessible and effective.",
-
     "before_after_tag": "The Transformation",
     "before_after_title": "Before vs After AgroAssist AI",
     "before_after_desc": "Hover over each card to see the transformation.",
@@ -68,7 +69,6 @@
     "flip_6_front_p": "Cloud-only apps fail when you need them most in rural fields",
     "flip_6_back_h3": "Works Offline",
     "flip_6_back_p": "Queue scans offline, auto-sync when you're back online",
-
     "how_it_works_tag": "How It Works",
     "how_it_works_title": "Three Simple Steps to Crop Health",
     "how_it_works_desc": "From diagnosis to treatment in seconds — no agronomist needed for initial assessment.",
@@ -78,7 +78,6 @@
     "step_2_desc": "In less than 30 seconds, our AI engine analyzes your photo and identifies the exact disease affecting your crop — complete with the disease name, how severe it is, and how confident the AI is in its diagnosis. It covers over 50 crop diseases across tomato, potato, maize, rice, coffee, and more. No waiting for an agronomist. No guessing. Just fast, accurate answers right on your screen.",
     "step_3_title": "Get Treatment",
     "step_3_desc": "Once the disease is identified, AgroAssist AI recommends the best treatment options — including Rwanda-approved pesticides with exact dosage, how to apply them, and where to buy them locally in your district. You also get safety intervals for harvesting, so your produce stays safe for consumption. Everything is available in both English and Kinyarwanda, so you never miss a detail.",
-
     "impact_m_tag": "Measurable Impact",
     "impact_m_title": "What We Deliver for Farmers",
     "impact_m_desc": "Success is measured in farmer outcomes — not just features shipped.",
@@ -92,7 +91,6 @@
     "impact_m_4_desc": "From waiting weeks for an agronomist to an instant AI answer.",
     "impact_m_5_title": "Connectivity Resilience",
     "impact_m_5_desc": "Offline mode queues and syncs — no data lost in rural fields.",
-
     "features_tag": "Features",
     "features_title": "Everything Farmers Need in One App",
     "features_desc": "From AI-powered diagnosis to expert consultations, AgroAssist AI is a complete agricultural intelligence platform.",
@@ -115,7 +113,6 @@
     "feature_8_desc": "Export branded diagnostic certificates with full disease analysis, treatment plan, and expert recommendations.",
     "feature_9_title": "Voice AI Consultant",
     "feature_9_desc": "Live voice conversation with an AI agronomist. Designed for accessibility — works even for visually impaired farmers.",
-
     "impact_tag": "Impact",
     "impact_title": "Transforming Agriculture Across Rwanda",
     "impact_desc": "Across all 30 districts of Rwanda, AgroAssist AI is empowering farmers with the intelligence they need to thrive.",
@@ -130,7 +127,6 @@
     "impact_quote": "\"AgroAssist AI gives me the confidence to treat my crops properly. Before, I had to walk 2 hours to find an agronomist. Now I just take a photo and get answers in seconds.\"",
     "impact_author": "— Rwandan Farmer",
     "impact_location": "Musanze District",
-
     "mission_tag": "Our Mission",
     "mission_title": "Every Farmer's 5 Minutes Count",
     "mission_p1": "When a farmer sees a diseased leaf, the clock starts. In Rwanda, getting a proper diagnosis means traveling hours to find an agronomist — and waiting days or even weeks for an answer. By then, the disease has spread, the damage is done, and the harvest is lost. Every season, smallholder farmers lose up to 30% of their crops to preventable diseases, simply because help comes too late.",
@@ -139,7 +135,6 @@
     "mission_stat_1": "Farmers in Rwanda",
     "mission_stat_2": "Agronomist Ratio",
     "mission_stat_3": "Annual Crop Loss",
-
     "team_tag": "Our Team",
     "team_title": "Meet the People Behind AgroAssist AI",
     "team_desc": "A passionate team of engineers, agronomists, and business leaders building the future of farming in Rwanda.",
@@ -153,7 +148,8 @@
     "team_cedrick_detail": "Intelligence Systems",
     "team_valerien_role": "Agronomist",
     "team_valerien_detail": "Agricultural Expert",
-
+    "team_imena_role": "Community & Impact Lead",
+    "team_imena_detail": "Farmer Experience & Adoption",
     "download_tag": "Get The App",
     "download_title": "Start Diagnosing Your Crops Today",
     "download_desc": "Download AgroAssist AI for free. Available as Android APK and Progressive Web App. Works on any smartphone.",
@@ -163,11 +159,9 @@
     "download_meta_2": "10 free scans",
     "download_meta_3": "Any Android phone",
     "download_qr": "Scan to Download",
-
     "partners_tag": "Partners",
     "partners_title": "Supported By",
     "partners_desc": "We're proud to work with organizations that share our vision for transforming African agriculture.",
-
     "footer_desc": "AI-powered crop disease diagnosis platform for Rwandan smallholder farmers. Building the future of agriculture, one scan at a time.",
     "footer_product": "Product",
     "footer_features": "Features",
@@ -182,7 +176,6 @@
     "footer_contact_title": "Contact",
     "footer_address": "Kicukiro, Kigali, Rwanda",
     "footer_copyright": "© 2026 AgroAssist AI. All rights reserved. Built in Rwanda for African farmers.",
-
     "page_title": "AgroAssist AI - Smart Crop Disease Diagnosis for Rwanda",
     "page_desc": "AI-powered crop disease diagnosis platform for Rwandan smallholder farmers. Snap a photo, get instant diagnosis and treatment recommendations."
   },
@@ -192,47 +185,48 @@
     "nav_impact": "Ingaruka",
     "nav_team": "Ikipe",
     "nav_download": "Kurura App",
-
     "hero_title_1": "Ubushakashatsi bw'Imiti y'Indwara z'Imbuto",
-    "hero_typing": ["Kumenura", "Kwivuza", "Kwirinda"],
+    "hero_typing": [
+      "Gusuzuma",
+      "Kuvura",
+      "Gukumira"
+    ],
     "hero_title_2": "ku Rwanda",
-    "hero_subtitle": "Fotora imbuto yawe. Mushakishwa ubushakashatsi bw'Imiti bwihuse, amabwiriza y'ubuvuzi, n'ubufasha bw'abahugurwa — byakozwe ku bahinzi b'Urwanda, mu Kinyarwanda n'icyongereza.",
-    "hero_cta_download": "Kurura Bure",
-    "hero_cta_how_it_works": "Reba Uburyo Bikora",
+    "hero_subtitle": "Fata ifoto y'umusaruro wawe. Shaka uburyo bwo gusuzuma indwara na AI ako kanya, inama ku buvuzi, n'ubufasha bw'impuguke - byakorewe abahinzi bo mu Rwanda, mu Cyongereza mu Kinyarwanda no mu kiswahili.",
+    "hero_cta_download": "Kurura Porogaramu y'Ubuntu",
+    "hero_cta_how_it_works": "Reba Uko Bikora",
     "hero_stat_1_number": "30",
     "hero_stat_1_label": "Akarere Twifuzamo",
     "hero_stat_2_number": "50+",
-    "hero_stat_2_label": "Indwara Zimenyekanye",
+    "hero_stat_2_label": "Indwara Zamenyekanye",
     "hero_stat_3_number": "3",
     "hero_stat_3_label": "Indimi",
-
-    "challenges_tag": "Ibikorera",
-    "challenges_title": "Abahinzi b'Urwanda Bahangana n'Imbuto Buri Mugenzi",
-    "challenges_desc": "Abahinzi batoya b uwagira 80% y'ibiryo by'Urwanda, ariko bahura n'ibikorera bigoye bituma ubufatiro bwabo bukagenda.",
+    "challenges_tag": "Inzitizi",
+    "challenges_title": "Abahinzi bo mu Rwanda bahomba imyaka buri gihembwe cy'ihinga.",
+    "challenges_desc": "Abahinzi bato nibo batanga 80% by’ibiribwa mu Rwanda, ariko bahura n’imbogamizi zikomeye zishyira mu kaga imibereho yabo.",
     "challenge_1_stat": "7–14",
     "challenge_1_unit": "iminsi",
-    "challenge_1_title": "Kumenya Hakurya",
-    "challenge_1_desc": "Abahinzi bamenya indwara z'imbuto biheburye, nyuma y'uko hasanzwe hasize. Nta mitangirire yo kwibutsa ifite, imbuto zose zirashobora guhengamwa.",
+    "challenge_1_title": "Gutahura bitinze",
+    "challenge_1_desc": "Akenshi abahinzi bavumbura indwara z’ibihingwa batinze, nyuma y’uko ibyangiritse ari byinshi cyane. Iyo nta buryo bwo gutanga amakuru hakiri kare buhari, umusaruro wose ushobora gupfa ubusa.",
     "challenge_2_stat": "1:1,000+",
     "challenge_2_unit": "igipimo",
-    "challenge_2_title": "Nta Bahuza Bihambaye",
-    "challenge_2_desc": "Urwanda rufite abahuza b'ubuhinzi gusa batabanza 200 kuri abahinzi miliyoni 2. Abahinzi batoya ntashobora kugera ku muntu uzi neza igihe imbuto zabo zirwaye.",
+    "challenge_2_title": "Abahanga Ntibakenewe",
+    "challenge_2_desc": "u Rwanda rufite inzobere mu by’ubuhinzi zigera kuri 200 gusa ku bahinzi barenga miliyoni ebyiri. Abahinzi bato benshi ntibabasha kubona inzobere ibafasha iyo imyaka yabo yibasiwe n’indwara.",
     "challenge_3_stat": "40%",
-    "challenge_3_unit": "byaherekejwe",
-    "challenge_3_title": "Ubuvo Bubura",
-    "challenge_3_desc": "Abahinzi bizeera ku mashyira y'abandi cyangwa ku makuru y'ibicuruzwa, buginsiza amahera kandi bahungabanya ibidukikije.",
+    "challenge_3_unit": "Ibyapfuye ubusa",
+    "challenge_3_title": "Uburyo bwo kuvura budakwiye",
+    "challenge_3_desc": "Abahinzi bashingira ku nama z’abaturanyi cyangwa ku byo basabwe n’abacuruzi, akenshi bakagura imiti yica udukoko itari yo cyangwa itemewe, ibyo bigatuma bapfusha ubusa amafaranga kandi bikangiza ibidukikije.",
     "challenge_4_stat": "1",
     "challenge_4_unit": "ururimi gusa",
-    "challenge_4_title": "Uburyo bw'Indimi",
-    "challenge_4_desc": "Amashyirahamwe menshi y'ubuhinzi ari mu cyongereza gusa. Abahinzi b'Urwanda bakeneye ibisubizo mu Kinyarwanda kugira ngo bikorere neza.",
-
-    "before_after_tag": "Guhinduka",
-    "before_after_title": "Imbere na Nyuma y'AgroAssist AI",
-    "before_after_desc": "Kurinda ibiri muri kiriya karemeze kubona impinduko.",
+    "challenge_4_title": "Inzitizi z'ururimi",
+    "challenge_4_desc": "Porogaramu nyinshi zifashishijwe mu buhinzi ziboneka mu rurimi rw'Icyongereza gusa. Abahinzi bo mu Rwanda bakeneye ibisubizo biboneka mu Kinyarwanda kugira ngo babashe kubyifashisha byoroshye kandi bitange umusaruro nyawo.",
+    "before_after_tag": "Impinduka",
+    "before_after_title": "Mbere na Nyuma ya AgroAssist AI",
+    "before_after_desc": "Shyira akamenyetso k'imbeba hejuru ya buri karita kugira ngo urebe uko ihinduka.",
     "flip_hint": "Kurinda kubona ibisubizo →",
-    "flip_badge": "Vyakemurwe",
+    "flip_badge": "Byakemurwe",
     "flip_1_front_h3": "Iminsi 1–14",
-    "flip_1_front_p": "Gutegereza umuhugurwa kumenura indwara y'imbuto yawe",
+    "flip_1_front_p": "Tegereza umuhanga mu by'ubuhinzi kugira ngo amenye indwara y'ibihingwa byawe",
     "flip_1_back_h3": "Hasi y'Akasekonde 30",
     "flip_1_back_p": "Kumenura kw'ubushakashatsi bw'Imiti bwihuse igitandukanye",
     "flip_2_front_h3": "Genda ku Itabiro",
@@ -255,7 +249,6 @@
     "flip_6_front_p": "Amashyirahamwe y'ibyegero gusa arahagarara igihe ukeneye cane",
     "flip_6_back_h3": "Akora Nta Internet",
     "flip_6_back_p": "Kubika ubusuzume nta internet hanyuma ugasubira online",
-
     "how_it_works_tag": "Uburyo Bikora",
     "how_it_works_title": "Intambwe ebyiri byoroshye kugira ngo imbuto zikore neza",
     "how_it_works_desc": "Kuva ku kumenura kugera ku buvuzi mu sekonda — ntakumenura kw'ubushakashatsi bukenewe.",
@@ -265,7 +258,6 @@
     "step_2_desc": "Mu isekonda isaga 30, ubushakashatsi bwacu bukora ubushakashatsi bw'ishusho yawe bukamenya indwara ikomeje imbuto yawe — hamwe n'izina ry'indwara, ubukomezi bwayo, n'ukwizera kw'ubushakashatsi mu kumenura. Bujyana n'indwara zirenga 50 ku mbuto zitandukanye. Nta gutegereza. Nta guhimbagurwa. Ibisubizo vyoroshye kandi vyizewe vyo aho.",
     "step_3_title": "Shakisha Ubuvuzi",
     "step_3_desc": "Igihe indwara yamenyekanye, AgroAssist AI yereka ubuvuzi bwiza — harimo imiti yemewe y'Urwanda hamwe n'ibiro bya nyayo, uko yakoreshejwe, aho igurishwa mu karere kawe. Ufite nanone igihe kizewe gushyiraho. Ibintu vyose biri mu Kinyarwanda n'icyongereza, kugira ngo utangurwe ibintu.",
-
     "impact_m_tag": "Ingaruka Zimenyekanye",
     "impact_m_title": "Ico Dukorera Abahinzi",
     "impact_m_desc": "Intsinzo igerwamo mu bikorwa vy'abahinzi — atari ibikorwa gusa.",
@@ -279,7 +271,6 @@
     "impact_m_4_desc": "Kuva gutegereza amahoro kugeza ku bisubizo vy'ubushakashatsi bwihuse.",
     "impact_m_5_title": "Kugumana Internet",
     "impact_m_5_desc": "Uburyo bwo gukoresha nta internet bwubika kandi bushyira hamwe.",
-
     "features_tag": "Ibikorwa",
     "features_title": "Ibintu Vyose Abahinzi Bakeneye mu App Imwe",
     "features_desc": "Kuva ku kumenura kw'ubushakashatsi kugera ku buvuzi bw'abahugurwa, AgroAssist AI ni ubushakashatsi bw'ubuhinzi buzuje.",
@@ -302,7 +293,6 @@
     "feature_8_desc": "Kurwoho amapaji y'ibimenyetso vy'ubushakashatsi hamwe n'ubuvuzi bwose.",
     "feature_9_title": "Igiciro cy'Amajwi",
     "feature_9_desc": "Ubufasha bw'amajwi hamwe n'umuhugurwa w'ubushakashatsi. Byakonzwe kugira ngo bikore kuri bose.",
-
     "impact_tag": "Ingaruka",
     "impact_title": "Guhindura Ubuhinzi mu Rwanda hose",
     "impact_desc": "Mu karere ka 30 ka Rwanda, AgroAssist AI yobora abahinzi n'ubushakashatsi bakeneye kugira ngo bahimbane.",
@@ -317,7 +307,6 @@
     "impact_quote": "\"AgroAssist AI yangiza ubwiza bwo gufata ubuvuzi bw'imbuto mu buryo bwiza. Imbere, nagendaga amasaha 2 kugira mbone umuhugurwa. Ubu, fotora gusa kandi uhabwe ibisubizo mu sekonda.\"",
     "impact_author": "— Umuhinzi w'Urwanda",
     "impact_location": "Akarere ka Musanze",
-
     "mission_tag": "Intumbero Yacu",
     "mission_title": "Igihe c'Umuhinzi Kimwe Cyose Ni Igihe",
     "mission_p1": "Igihe umuhinzi araba arimo icyumba cyangwa inzara irwaye, ikoreramwo ritangira. Mu Rwanda, kumenura kwihuse bikorwa bigenewe gutegereza amahoro. Mu bihe, indwara yarangiye, akabuza cyane kandi imbuto zaraherekejwe. Buri mugenzi, abahinzi batoya bahangana n'imbuto 30% zabo zirwaye.",
@@ -326,7 +315,6 @@
     "mission_stat_1": "Abahinzi mu Rwanda",
     "mission_stat_2": "Igipimo cy'Abahuza",
     "mission_stat_3": "Imbuto Zihagarika Buri Mugenzi",
-
     "team_tag": "Ikipe Yacu",
     "team_title": "Menya Abantu Batweye AgroAssist AI",
     "team_desc": "Ikipe y'abashinzwe ubuhinga, abahuza ubuhinzi, n'abanyamamake batangaje ubuhinzi bw'ejo hazaza mu Rwanda.",
@@ -340,7 +328,8 @@
     "team_cedrick_detail": "Ibikoresho vy'Ubushakashatsi",
     "team_valerien_role": "Muhugurwa w'Ubuhinzi",
     "team_valerien_detail": "Umuhugurwa w'Ubuhinzi",
-
+    "team_imena_role": "Community & Impact Lead",
+    "team_imena_detail": "Farmer Experience & Adoption",
     "download_tag": "Fungura App",
     "download_title": "Tangura Kumenura Indwara z'Imbuto Uyu Munsi",
     "download_desc": "Kurura AgroAssist AI buke. Iriho mu buryo bw'Android APK na Progressive Web App. Ikora kuri telefone yose.",
@@ -350,11 +339,9 @@
     "download_meta_2": "Ubushuzume 10 buke",
     "download_meta_3": "Telefone yose y'Android",
     "download_qr": "Skana Kugira ngo Kurure",
-
     "partners_tag": "Abadukorana",
     "partners_title": "Twariko Twateguwe",
     "partners_desc": "Twishimiye gukorana n'uburyo bushaka intumbero yacu yo guhindura ubuhinzi bw'Afrika.",
-
     "footer_desc": "Porogaramu yo kumenura indwara z'imbuto mu buryo bw'ubushakashatsi bw'Imiti ku bahinzi batoya b'Urwanda. Tuzereka ubuhinzi bw'ejo, buri busuzume.",
     "footer_product": "Ibikorwa",
     "footer_features": "Ibikorwa",
@@ -369,7 +356,6 @@
     "footer_contact_title": "Tuvugishe",
     "footer_address": "Kicukiro, Kigali, Rwanda",
     "footer_copyright": "© 2026 AgroAssist AI. Uburenganzira bwose buhari. Byakozwe mu Rwanda ku bahinzi b'Afrika.",
-
     "page_title": "AgroAssist AI - Ubushakashatsi bw'Imiti y'Indwara z'Imbuto mu Rwanda",
     "page_desc": "Porogaramu yo kumenura indwara z'imbuto mu buryo bw'ubushakashatsi bw'Imiti ku bahinzi batoya b'Urwanda. Fotora, uhabwe kumenura kwihuse n'amabwiriza y'ubuvuzi."
   },
@@ -379,9 +365,12 @@
     "nav_impact": "Athari",
     "nav_team": "Timu",
     "nav_download": "Pakua Programu",
-
     "hero_title_1": "Uchambuzi wa AI wa Ugonjwa wa Mazao",
-    "hero_typing": ["Chunguza", "Tibu", "Linda"],
+    "hero_typing": [
+      "Chunguza",
+      "Tibu",
+      "Linda"
+    ],
     "hero_title_2": "kwa Rwanda",
     "hero_subtitle": "Piga picha ya mazao yako. Pata uchambuzi wa AI wa haraka, mapendekezo ya matibabu, na msaada wa wataalamu — iliyojengwa kwa wakulima wa Rwanda, kwa Kiingereza na Kinyarwanda.",
     "hero_cta_download": "Pakua Bure",
@@ -392,7 +381,6 @@
     "hero_stat_2_label": "Ugonjwa Uliotambuliwa",
     "hero_stat_3_number": "3",
     "hero_stat_3_label": "Lugha",
-
     "challenges_tag": "Changamoto",
     "challenges_title": "Wakulima wa Rwanda Hupoteza Mazao Kila Msimu",
     "challenges_desc": "Wakulima wadogo wanazalisha 80% ya chakula cha Rwanda, lakini wanakabiliwa na changamoto kubwa zinazohatarisha rizao lao.",
@@ -412,7 +400,6 @@
     "challenge_4_unit": "lugha tu",
     "challenge_4_title": "Vizuizi vya Lugha",
     "challenge_4_desc": "Programu nyingi za kilimo ziko kwa Kiingereza tu. Wakulima wa Rwanda wanahitaji suluhisho kwa Kinyarwanda ili ziwe na ufanisi.",
-
     "before_after_tag": "Mabadiliko",
     "before_after_title": "Kabla ya na Baada ya AgroAssist AI",
     "before_after_desc": "Weka kwenye kila kadi ili kuona mabadiliko.",
@@ -442,7 +429,6 @@
     "flip_6_front_p": "Programu za wingu tu huanguka unapohitaji sana katika mashamba ya vijijini",
     "flip_6_back_h3": "Fanya Kazi Bila Intaneti",
     "flip_6_back_p": "Weka skana nje ya mtandao, sauti ya kiotomatiki unaporejea mtandaoni",
-
     "how_it_works_tag": "Jinsi Inavyofanya Kazi",
     "how_it_works_title": "Hatua Tatu Rahisi Kwa Afya ya Mazao",
     "how_it_works_desc": "Kuanzia uchambuzi hadi matibabu kwa sekunde — hakuna haja ya mtaalamu kwa tathmini ya mwanzo.",
@@ -452,7 +438,6 @@
     "step_2_desc": "Chini ya sekunde 30, injini yetu ya AIuchambuzi picha yako na kutambua ugonjwa hasa unaokumba mazao yako — ikiwa ni pamoja na jina la ugonjwa, jinsi ilivyo mbaya, na jinsi AI ilivyo na uhakika. Inashughulikia zaidi ya ugonjwa 50 wa mazao.",
     "step_3_title": "Pata Matibabu",
     "step_3_desc": "Ugonjwa ukigunduliwa, AgroAssist AI inapendekeza chaguo bora za matibabu — ikiwa ni pamoja na dawa zilizoidhinishwa na Rwanda, kiasi sahihi, jinsi ya kuitumia, na Mahali pa kununua. Pia unapata muda wa usalama wa kuvuna.",
-
     "impact_m_tag": "Athari Zinazogundulika",
     "impact_m_title": "Tunachowaletea Wakulima",
     "impact_m_desc": "Mafanikio yamepimwa kwa matokeo ya mkulima — si tu vipengele vilivyotolewa.",
@@ -466,7 +451,6 @@
     "impact_m_4_desc": "Kuanzia kusubiri wiki kwa mtaalamu hadi jibu la AI la haraka.",
     "impact_m_5_title": "Uhimilifu wa Muunganisho",
     "impact_m_5_desc": "Mtindo wa nje ya mtandao huhifadhi na kusawazisha — hakuna data iliyopotea.",
-
     "features_tag": "Vipengele",
     "features_title": "Kila Kitu Wakulima Wanachohitaji kwenye Programu Moja",
     "features_desc": "Kuanzia uchambuzi wa AI hadi ushauri wa wataalamu, AgroAssist AI ni jukwaa kamili la akili ya kilimo.",
@@ -489,7 +473,6 @@
     "feature_8_desc": "Hamisha vyeti vya uchambuzi vilivyoainishwa.",
     "feature_9_title": "Shauri la AI kwa Sauti",
     "feature_9_desc": "Mazungumzo ya sauti na mkulima wa AI. Iliyoundwa kwa upatikanaji.",
-
     "impact_tag": "Athari",
     "impact_title": "Kubadilisha Kilimo kote kwa Rwanda",
     "impact_desc": "Katika wilaya zote 30 za Rwanda, AgroAssist AI inawasaidia wakulima na akili wanayohitaji ili kustawi.",
@@ -504,13 +487,11 @@
     "impact_quote": "\"AgroAssist AI inanipa ujasiri wa kutibu mazao yangu vizuri. Kabla, nilikuwa naenda saa 2 kutafuta mtaalamu. Sasa napiga picha tu na kupata majibu kwa sekunde.\"",
     "impact_author": "— Mkulima wa Rwanda",
     "impact_location": "Wilaya ya Musanze",
-
     "mission_tag": "Dhamira Yetu",
     "mission_title": "Dakika 5 za Kila Mkulima Zina Thamani",
     "mission_p1": "Mkulima akiangalia jani gumu, saa inaanza. Rwanda, kupata utambuzi sahihi kunamaanisha kusafiri masaa kupata mtaalamu. Wakati ugonjwa umeenea, uharibifu umefanyika, na mavuno yamepotea.",
     "mission_p2": "AgroAssist AI inabadilisha hilo. Tunatoa utambuzi wa kiwango cha kitaalamu chini ya sekunde 30 — moja kwa moja kwenye simu ya mkulima. Mabadiliko hayo ndio msingi wa kila kitu tunachofanya.",
     "mission_p3": "Dhamira yetu ni wazi: kufanya utambuzi wa kiwango cha wataalamu kuwa bure, wa haraka, na unapatikana kwa kila familia ya kilimo katika Rwanda — ili kila mkulima asipoteze msimu kwa msaada kuwa mbali.",
-
     "team_tag": "Timu Yetu",
     "team_title": "Watu Walio Nyuma ya AgroAssist AI",
     "team_desc": "Timu yenye shauku ya wahandisi, wataalamu wa kilimo, na viongozi wa biashara wanaojenga mustakabali wa kilimo nchini Rwanda.",
@@ -524,7 +505,8 @@
     "team_cedrick_detail": "Mifumo ya Akili",
     "team_valerien_role": "Mtaalamu wa Kilimo",
     "team_valerien_detail": "Mtaalamu wa Kilimo",
-
+    "team_imena_role": "Community & Impact Lead",
+    "team_imena_detail": "Farmer Experience & Adoption",
     "download_tag": "Pakua Programu",
     "download_title": "Anza Kuchunguza Mazao Yako Leo",
     "download_desc": "Pakua AgroAssist AI bure. Inapatikana kama APK ya Android na Programu ya Mtandao. Inafanya kazi kwenye simu yoyote.",
@@ -534,11 +516,9 @@
     "download_meta_2": "Skana 10 bure",
     "download_meta_3": "Simu yoyote ya Android",
     "download_qr": "Skana Ili Kupakua",
-
     "partners_tag": "Washirika",
     "partners_title": "Tunaungwa Mkono Na",
     "partners_desc": "Tunajivunia kufanya kazi na mashirika yanayoshiriki maono yetu ya kubadilisha kilimo barani Afrika.",
-
     "footer_desc": "Jukwaa la uchambuzi wa ugonjwa wa mazao kwa AI kwa wakulima wadogo wa Rwanda. Tunaisha mustakabali wa kilimo, skana moja kwa moja.",
     "footer_product": "Bidhaa",
     "footer_features": "Vipengele",
@@ -553,7 +533,6 @@
     "footer_contact_title": "Wasiliana",
     "footer_address": "Kicukiro, Kigali, Rwanda",
     "footer_copyright": "© 2026 AgroAssist AI. Haki zote zimehifadhiwa. Imejengwa nchini Rwanda kwa wakulima wa Afrika.",
-
     "page_title": "AgroAssist AI - Uchambuzi wa AI wa Ugonjwa wa Mazao kwa Rwanda",
     "page_desc": "Jukwaa la uchambuzi wa ugonjwa wa mazao kwa AI kwa wakulima wadogo wa Rwanda. Piga picha, pata uchambuzi wa haraka na mapendekezo ya matibabu."
   }
