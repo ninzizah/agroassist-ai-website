@@ -1756,7 +1756,32 @@ img {
     }
 
     .hero-visual {
-        display: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .phone-mockup {
+        width: 220px;
+    }
+
+    .phone-screen {
+        min-height: 400px;
+    }
+
+    .floating-card-1 {
+        top: 20px;
+        right: -10px;
+    }
+
+    .floating-card-2 {
+        bottom: 80px;
+        left: -20px;
+    }
+
+    .floating-card-3 {
+        bottom: 20px;
+        right: 0;
     }
 
     .challenges-grid {
@@ -1869,6 +1894,60 @@ img {
 
     .hero {
         padding: 100px 0 60px;
+    }
+
+    .hero-visual {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+    .phone-mockup {
+        width: 200px;
+        border-radius: 28px;
+        padding: 10px;
+    }
+
+    .phone-screen {
+        min-height: 360px;
+        border-radius: 20px;
+    }
+
+    .floating-card {
+        display: none;
+    }
+
+    .app-header-mini {
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .app-content-mini {
+        padding: 12px;
+    }
+
+    .scan-preview {
+        padding: 24px;
+        border-radius: 12px;
+        font-size: 11px;
+    }
+
+    .scan-preview i {
+        font-size: 22px;
+    }
+
+    .diagnosis-card-mini {
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .diagnosis-badge {
+        font-size: 10px;
+        padding: 3px 10px;
+    }
+
+    .rec-item {
+        font-size: 10px;
     }
 
     .hero-container {
@@ -2130,6 +2209,23 @@ img {
 
     .logo-text {
         font-size: 18px;
+    }
+
+    .hero-visual {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+    }
+
+    .phone-mockup {
+        width: 170px;
+        border-radius: 24px;
+        padding: 8px;
+    }
+
+    .phone-screen {
+        min-height: 300px;
+        border-radius: 18px;
     }
 
     .hero {
