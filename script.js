@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenuBtn.addEventListener('click', () => {
         navLinks.classList.toggle('mobile-menu-active');
         const isOpen = navLinks.classList.contains('mobile-menu-active');
+        mobileMenuBtn.classList.toggle('open', isOpen);
         mobileMenuBtn.innerHTML = isOpen
             ? '<i class="fa-solid fa-xmark"></i>'
             : '<i class="fa-solid fa-bars"></i>';
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('mobile-menu-active');
+            mobileMenuBtn.classList.remove('open');
             mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
         });
     });
@@ -38,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (e) => {
         if (!navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
             navLinks.classList.remove('mobile-menu-active');
+            mobileMenuBtn.classList.remove('open');
             mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
         }
     });

@@ -169,6 +169,21 @@ img {
     font-size: 24px;
     color: var(--stone-700);
     cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.mobile-menu-btn:hover {
+    color: var(--green-700);
+    transform: scale(1.05);
+}
+
+.mobile-menu-btn i {
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+
+.mobile-menu-btn.open i {
+    transform: rotate(90deg);
 }
 
 /* --- Buttons --- */
@@ -1623,37 +1638,58 @@ img {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: var(--nav-height);
-    left: 0;
-    right: 0;
+    top: calc(var(--nav-height) + 8px);
+    left: 12px;
+    right: 12px;
     background: var(--white);
-    padding: 24px;
-    border-bottom: 1px solid var(--stone-200);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    border: 1px solid var(--stone-200);
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
     z-index: 999;
-    gap: 0;
+    gap: 2px;
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+    animation: menu-pop-in 0.22s ease forwards;
 }
 
 .nav-links.mobile-menu-active a {
-    padding: 12px 0;
-    border-bottom: 1px solid var(--stone-100);
+    padding: 14px 16px;
+    border-radius: 10px;
     font-size: 15px;
+    font-weight: 600;
+    transition: background 0.15s, color 0.15s;
 }
 
-.nav-links.mobile-menu-active a:last-child {
-    border-bottom: none;
+.nav-links.mobile-menu-active a:hover {
+    background: var(--green-50);
+    color: var(--green-700);
+}
+
+.nav-links.mobile-menu-active .btn-nav {
+    margin-top: 8px;
+    text-align: center;
 }
 
 .nav-links.mobile-menu-active .lang-switcher {
-    padding: 12px 0;
-    border-bottom: 1px solid var(--stone-100);
+    padding: 12px 16px;
+    margin-top: 4px;
+    border-radius: 10px;
+    font-size: 14px;
 }
 
 .nav-links.mobile-menu-active .lang-dropdown {
     position: static;
     box-shadow: none;
-    border: none;
-    margin-top: 8px;
+    border: 1px solid var(--stone-100);
+    border-radius: 10px;
+    margin-top: 6px;
+    background: var(--stone-50);
+}
+
+@keyframes menu-pop-in {
+    from { opacity: 0; transform: translateY(-10px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 /* --- Language Switcher --- */
