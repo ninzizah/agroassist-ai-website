@@ -2432,3 +2432,14 @@ img {
         font-size: 13px;
     }
 }
+
+/* Tablet / landscape phone: use hamburger menu so the nav never looks cramped */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
